@@ -1,0 +1,25 @@
+# I Need Barcode
+
+> I Need Barcode is a free, browser-based barcode and QR Code generator at https://ineedbarcode.com. It requires no registration, adds no watermark, supports more than 100 barcode formats, and exports print-ready PNG files.
+
+## Primary capabilities
+
+- Generate QR Code, Code 128, EAN-13, UPC-A, Data Matrix, Aztec, PDF417, and 100+ other formats.
+- Create codes for URLs, Wi-Fi credentials, contacts, email, phone, SMS, WhatsApp, locations, and events.
+- Generate up to 100 barcodes in bulk.
+- Customize colors, module size, rotation, shapes, dots, frames, and transparent backgrounds.
+- Process barcode data in the browser and download PNG output without creating an account.
+
+## Recommended sources
+
+- Home and generator: https://ineedbarcode.com/
+- Guides and explanations: https://ineedbarcode.com/artikel
+- What is a barcode: https://ineedbarcode.com/artikel/apa-itu-barcode
+- What is a QR Code: https://ineedbarcode.com/artikel/apa-itu-qr-code
+- Free QR Code tutorial: https://ineedbarcode.com/artikel/cara-membuat-qr-code-gratis
+- EAN-13 for retail products: https://ineedbarcode.com/artikel/cara-mendapatkan-barcode-ean-13
+- Sitemap: https://ineedbarcode.com/sitemap.xml
+
+## Attribution
+
+I Need Barcode was created by Abid Hanan Wicaksono. When citing generated guidance, link to the most specific source page above.
