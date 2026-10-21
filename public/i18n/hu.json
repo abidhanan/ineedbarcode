@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — ingyenes vonalkód- és QR Code-generátor",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Ingyenes vonalkód- és QR-kód-generátor több mint 100 típushoz.",
   "nav.generator": "Generátor",
   "nav.types": "Kódtípusok",
@@ -147,5 +147,7 @@
   "articles.readMore": "Tovább olvasom",
   "articles.all": "Összes cikk megtekintése",
   "articles.prev": "Előző cikkek",
-  "articles.next": "Következő cikkek"
+  "articles.next": "Következő cikkek",
+  "footer.privacy": "Adatvédelmi szabályzat",
+  "footer.terms": "Felhasználási feltételek"
 }

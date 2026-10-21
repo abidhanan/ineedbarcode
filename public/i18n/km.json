@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — បង្កើតបាកូដ និង QR Code ឥតគិតថ្លៃ",
+  "meta.title": "I Need Barcode",
   "meta.desc": "កម្មវិធីបង្កើតបាកូដ និង QR Code ឥតគិតថ្លៃសម្រាប់ជាង 100 ប្រភេទ។",
   "nav.generator": "កម្មវិធីបង្កើត",
   "nav.types": "ប្រភេទបាកូដ",
@@ -147,5 +147,7 @@
   "articles.readMore": "អានបន្ថែម",
   "articles.all": "មើលអត្ថបទទាំងអស់",
   "articles.prev": "អត្ថបទមុន",
-  "articles.next": "អត្ថបទបន្ទាប់"
+  "articles.next": "អត្ថបទបន្ទាប់",
+  "footer.privacy": "គោលការណ៍ឯកជនភាព",
+  "footer.terms": "លក្ខខណ្ឌប្រើប្រាស់"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Ilmainen viivakoodi- ja QR-koodigeneraattori",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Ilmainen viivakoodi- ja QR-koodigeneraattori yli 100 tyypille.",
   "nav.generator": "Generaattori",
   "nav.types": "Viivakoodityypit",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lue lisää",
   "articles.all": "Näytä kaikki artikkelit",
   "articles.prev": "Edelliset artikkelit",
-  "articles.next": "Seuraavat artikkelit"
+  "articles.next": "Seuraavat artikkelit",
+  "footer.privacy": "Tietosuojakäytäntö",
+  "footer.terms": "Käyttöehdot"
 }

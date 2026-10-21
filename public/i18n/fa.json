@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — سازنده رایگان بارکد و QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "سازنده رایگان بارکد و کد QR برای بیش از ۱۰۰ نوع.",
   "nav.generator": "سازنده",
   "nav.types": "انواع بارکد",
@@ -147,5 +147,7 @@
   "articles.readMore": "ادامه مطلب",
   "articles.all": "مشاهده همه مقاله‌ها",
   "articles.prev": "مقاله‌های قبلی",
-  "articles.next": "مقاله‌های بعدی"
+  "articles.next": "مقاله‌های بعدی",
+  "footer.privacy": "سیاست حفظ حریم خصوصی",
+  "footer.terms": "شرایط و ضوابط"
 }

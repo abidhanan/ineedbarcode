@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Barra-kode eta QR kodeen sortzaile doakoa",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Barra-kode eta QR kodeen sortzaile doakoa, 100 mota baino gehiagorekin.",
   "nav.generator": "Sortzailea",
   "nav.types": "Kode motak",
@@ -147,5 +147,7 @@
   "articles.readMore": "Irakurri gehiago",
   "articles.all": "Ikusi artikulu guztiak",
   "articles.prev": "Aurreko artikuluak",
-  "articles.next": "Hurrengo artikuluak"
+  "articles.next": "Hurrengo artikuluak",
+  "footer.privacy": "Pribatutasun-politika",
+  "footer.terms": "Erabilera-baldintzak"
 }

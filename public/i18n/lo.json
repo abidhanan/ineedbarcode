@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — ສ້າງບາໂຄດ ແລະ QR Code ຟຣີ",
+  "meta.title": "I Need Barcode",
   "meta.desc": "ເຄື່ອງມືສ້າງບາໂຄດ ແລະ QR Code ຟຣີ ຮອງຮັບກວ່າ 100 ປະເພດ.",
   "nav.generator": "ຕົວສ້າງ",
   "nav.types": "ປະເພດບາໂຄດ",
@@ -147,5 +147,7 @@
   "articles.readMore": "ອ່ານຕໍ່",
   "articles.all": "ເບິ່ງບົດຄວາມທັງໝົດ",
   "articles.prev": "ບົດຄວາມກ່ອນໜ້າ",
-  "articles.next": "ບົດຄວາມຖັດໄປ"
+  "articles.next": "ບົດຄວາມຖັດໄປ",
+  "footer.privacy": "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ",
+  "footer.terms": "ຂໍ້ກຳນົດ ແລະ ເງື່ອນໄຂ"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "Generator Barcode & QR Code Gratis — I Need Barcode",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Buat barcode dan QR Code gratis tanpa daftar. Mendukung 100+ format, desain kustom, pembuatan massal, dan unduhan PNG siap cetak.",
   "nav.generator": "Generator",
   "nav.types": "Jenis Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Baca Selengkapnya",
   "articles.all": "Lihat Semua Artikel",
   "articles.prev": "Artikel sebelumnya",
-  "articles.next": "Artikel berikutnya"
+  "articles.next": "Artikel berikutnya",
+  "footer.privacy": "Kebijakan Privasi",
+  "footer.terms": "Syarat & Ketentuan"
 }

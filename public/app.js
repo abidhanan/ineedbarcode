@@ -188,6 +188,10 @@
       if (save) { try { localStorage.setItem('inbLang', code); } catch (e) { /* abaikan */ } }
       refreshTexts();
       localizeArticles(code);
+      // Tautan halaman per bahasa (Kebijakan Privasi, Syarat & Ketentuan)
+      each(document.querySelectorAll('[data-lang-href]'), function (a) {
+        a.href = (code === 'id' ? '' : '/' + code.toLowerCase()) + a.getAttribute('data-lang-href');
+      });
       keepAnchor(anchor);
     });
   }
@@ -837,8 +841,11 @@
     var dpr = window.devicePixelRatio || 1;
     var boxW = Math.max(120, el.preview.clientWidth - 40);
     var maxH = 480;
-    var cssW = Math.min(boxW, Math.max(full.width / dpr, Math.min(240, full.width)));
-    cssW = Math.min(cssW, maxH * full.width / full.height);
+    // Besar pratinjau mengikuti ukuran modul (1 px ≈ 35% kotak, 4 px ≈ 69%, 12 px penuh) dan sama untuk
+    // semua bentuk desain, sehingga perubahan ukuran modul terlihat tanpa pratinjau menjadi terlalu kecil
+    var mod = Math.min(12, Math.max(1, +el.scale.value || 4));
+    var fraction = 0.35 + 0.65 * Math.sqrt((mod - 1) / 11);
+    var cssW = Math.min(boxW, maxH * full.width / full.height) * fraction;
     var D = window.INB_DESIGN;
     var effective = D.effectiveScale(opts, state.design);
     var o = {};
@@ -846,16 +853,17 @@
     if (D.isCustom(opts, state.design)) {
       // Desain bentuk: modul bilangan bulat per 1 px agar pratinjau mengisi kotak & tetap tajam
       var units = full.width / (effective * 2);
-      o.scale = Math.max(1, Math.floor(cssW * dpr / units)) / 2;
+      o.scale = Math.max(1, Math.ceil(cssW * dpr / units)) / 2;
     } else {
-      o.scale = Math.max(1, Math.floor(cssW * dpr / (full.width / effective)));
+      o.scale = Math.max(1, Math.ceil(cssW * dpr / (full.width / effective)));
     }
     var d = {};
     Object.keys(state.design).forEach(function (k) { d[k] = state.design[k]; });
     d.minModule = 1;
     var c = window.INB_DESIGN.compose(o, d);
-    var shown = c.width / dpr;
-    if (shown > boxW) shown = boxW;                       // jaga-jaga bila skala 1 pun masih terlalu besar
+    // Digambar sedikit lebih besar (skala dibulatkan ke atas) lalu ditampilkan tepat selebar target,
+    // agar setiap ukuran modul punya besar pratinjau yang berbeda
+    var shown = Math.min(c.width / dpr, cssW, boxW);
     c.style.width = shown + 'px';
     c.setAttribute('role', 'img');
     c.setAttribute('aria-label', BY_ID[state.bcid].desc);
@@ -912,9 +920,13 @@
     }
     try {
       var opts = buildOpts(text);
+      // bwip-js menambahkan scaleX/scaleY & padding ke opsi saat menggambar; pratinjau memakai salinan bersih
+      // agar skalanya sendiri tidak tertimpa (barcode tanpa desain bentuk tampil sama besar dengan yang lain)
+      var previewOpts = {};
+      Object.keys(opts).forEach(function (k) { previewOpts[k] = opts[k]; });
       // Gambar untuk diunduh (sesuai ukuran modul pilihan)
       var full = makeCanvas(opts);
-      var view = previewCanvas(opts, full);
+      var view = previewCanvas(previewOpts, full);
       el.preview.innerHTML = '';
       el.preview.classList.remove('empty');
       el.preview.appendChild(view);

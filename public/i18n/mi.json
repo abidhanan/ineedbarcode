@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Pūwaihanga Waehere Pae me te QR Code Kore Utu",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Pūwaihanga waehere pae me te QR Code kore utu mō ngā momo 100 neke atu.",
   "nav.generator": "Pūwaihanga",
   "nav.types": "Ngā Momo Waehere Pae",
@@ -147,5 +147,7 @@
   "articles.readMore": "Pānui tonu",
   "articles.all": "Tirohia ngā tuhinga katoa",
   "articles.prev": "Ngā tuhinga o mua",
-  "articles.next": "Ngā tuhinga e whai ake nei"
+  "articles.next": "Ngā tuhinga e whai ake nei",
+  "footer.privacy": "Kaupapahere Tūmataiti",
+  "footer.terms": "Ngā Ture me ngā Tikanga"
 }

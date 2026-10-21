@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Gratis generator for strekkoder og QR-koder",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Gratis generator for strekkoder og QR-koder med over 100 typer.",
   "nav.generator": "Generator",
   "nav.types": "Strekkodetyper",
@@ -147,5 +147,7 @@
   "articles.readMore": "Les mer",
   "articles.all": "Se alle artikler",
   "articles.prev": "Forrige artikler",
-  "articles.next": "Neste artikler"
+  "articles.next": "Neste artikler",
+  "footer.privacy": "Personvernerklæring",
+  "footer.terms": "Vilkår for bruk"
 }

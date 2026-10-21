@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — უფასო შტრიხკოდისა და QR კოდის გენერატორი",
+  "meta.title": "I Need Barcode",
   "meta.desc": "უფასო შტრიხკოდისა და QR კოდის გენერატორი 100-ზე მეტი ტიპისთვის.",
   "nav.generator": "გენერატორი",
   "nav.types": "შტრიხკოდის ტიპები",
@@ -147,5 +147,7 @@
   "articles.readMore": "სრულად წაკითხვა",
   "articles.all": "ყველა სტატიის ნახვა",
   "articles.prev": "წინა სტატიები",
-  "articles.next": "შემდეგი სტატიები"
+  "articles.next": "შემდეგი სტატიები",
+  "footer.privacy": "კონფიდენციალურობის პოლიტიკა",
+  "footer.terms": "წესები და პირობები"
 }

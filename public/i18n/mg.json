@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Mpamorona Barcode sy QR Code Maimaim-poana",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Mpamorona barcode sy QR Code maimaim-poana ho an'ny karazany maherin'ny 100.",
   "nav.generator": "Mpamorona",
   "nav.types": "Karazana Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Hamaky bebe kokoa",
   "articles.all": "Hijery ny lahatsoratra rehetra",
   "articles.prev": "Lahatsoratra teo aloha",
-  "articles.next": "Lahatsoratra manaraka"
+  "articles.next": "Lahatsoratra manaraka",
+  "footer.privacy": "Politikan'ny Fiainana Manokana",
+  "footer.terms": "Fepetra sy Fitsipika"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Mugt ştrihkod we QR kod generatory",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100-den gowrak görnüş üçin mugt ştrihkod we QR kod generatory.",
   "nav.generator": "Generator",
   "nav.types": "Ştrihkod görnüşleri",
@@ -147,5 +147,7 @@
   "articles.readMore": "Dowamyny oka",
   "articles.all": "Ähli makalalary gör",
   "articles.prev": "Öňki makalalar",
-  "articles.next": "Indiki makalalar"
+  "articles.next": "Indiki makalalar",
+  "footer.privacy": "Gizlinlik syýasaty",
+  "footer.terms": "Şertler we düzgünler"
 }

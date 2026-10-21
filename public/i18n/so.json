@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Sameeyaha Barcode iyo QR Code ee Bilaashka ah",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Sameeyaha barcode iyo QR Code ee bilaashka ah ee in ka badan 100 nooc.",
   "nav.generator": "Sameeyaha",
   "nav.types": "Noocyada Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Akhri wax dheeraad ah",
   "articles.all": "Eeg dhammaan maqaallada",
   "articles.prev": "Maqaalladii hore",
-  "articles.next": "Maqaallada xiga"
+  "articles.next": "Maqaallada xiga",
+  "footer.privacy": "Siyaasadda Asturnaanta",
+  "footer.terms": "Shuruudaha iyo Xaaladaha"
 }

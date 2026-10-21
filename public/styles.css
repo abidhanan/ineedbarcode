@@ -549,10 +549,18 @@ input[type="color"]::-moz-color-swatch { border: 0; border-radius: 5px; }
 .section-head h2 { font-size: clamp(22px, 4vw, 28px); line-height: 1.25; font-weight: 700; letter-spacing: -0.02em; }
 .section-head p { margin-top: 8px; color: var(--muted); }
 
-.steps { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); text-align: center; }
+/* Cara pakai: isi kartu rata kiri */
+.steps { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); text-align: start; }
 .steps .step { width: 36px; height: 36px; border-radius: 10px; font-size: 15px; }
 .steps h3 { margin-top: 14px; font-size: 17px; font-weight: 650; }
 .steps p { margin-top: 6px; color: var(--muted); }
+/* HP: angka di kiri, tepat di tengah antara tepi atas dan bawah kartu */
+@media (max-width: 599px) {
+  .steps li { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 14px; align-items: center; }
+  .steps .step { grid-row: 1 / span 2; align-self: center; }
+  .steps h3 { margin-top: 0; }
+  .steps p { margin-top: 4px; }
+}
 
 /* Akordeon (dipakai FAQ & jenis barcode) */
 .accordion { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 860px; margin: 0 auto; }
@@ -623,6 +631,11 @@ input[type="color"]::-moz-color-swatch { border: 0; border-radius: 5px; }
 .social:hover { border-color: var(--muted); }
 .social:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .social svg { width: 20px; height: 20px; fill: currentColor; }
+/* Tautan Kebijakan Privasi & Syarat Ketentuan, sama dengan ineedsave.com */
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; padding-bottom: 20px; font-size: 14px; }
+.footer-links a { color: var(--text); font-weight: 600; text-decoration: none; }
+.footer-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.footer-links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 .footer-bottom p { white-space: nowrap; }
 .footer-bottom { padding-top: 16px; padding-bottom: calc(20px + var(--safe-b)); border-top: 1px solid var(--footer-border); color: var(--muted); font-size: min(13px, 3vw); text-align: center; }
 .footer-bottom a { color: var(--text); text-decoration: none; white-space: nowrap; }
@@ -868,6 +881,11 @@ button.social { -webkit-appearance: none; appearance: none; cursor: pointer; pad
 }
 .article-page-body .topbar-inner { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
 @media (max-width: 899px) { .article-page-body .topbar-inner { display: flex; justify-content: space-between; } }
+
+/* Halaman Kebijakan Privasi & Syarat Ketentuan */
+.wrap.legal-layout { max-width: calc(860px + 64px); padding-bottom: 64px; }
+.legal .post-head { margin-bottom: 8px; }
+.legal-body h2 { margin-top: 32px; }
 
 [hidden] { display: none !important; }
 

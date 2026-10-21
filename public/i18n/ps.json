@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — وړیا بارکوډ او QR Code جوړوونکی",
+  "meta.title": "I Need Barcode",
   "meta.desc": "له ۱۰۰ څخه زیاتو ډولونو لپاره وړیا بارکوډ او QR کوډ جوړوونکی.",
   "nav.generator": "جوړوونکی",
   "nav.types": "د بارکوډ ډولونه",
@@ -147,5 +147,7 @@
   "articles.readMore": "نور ولولئ",
   "articles.all": "ټولې مقالې وګورئ",
   "articles.prev": "پخوانۍ مقالې",
-  "articles.next": "راتلونکې مقالې"
+  "articles.next": "راتلونکې مقالې",
+  "footer.privacy": "د محرمیت تګلاره",
+  "footer.terms": "شرطونه او مقررات"
 }

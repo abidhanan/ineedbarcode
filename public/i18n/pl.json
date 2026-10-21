@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — darmowy generator kodów kreskowych i QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Darmowy generator kodów kreskowych i QR dla ponad 100 typów.",
   "nav.generator": "Generator",
   "nav.types": "Typy kodów",
@@ -147,5 +147,7 @@
   "articles.readMore": "Czytaj więcej",
   "articles.all": "Zobacz wszystkie artykuły",
   "articles.prev": "Poprzednie artykuły",
-  "articles.next": "Następne artykuły"
+  "articles.next": "Następne artykuły",
+  "footer.privacy": "Polityka prywatności",
+  "footer.terms": "Regulamin"
 }

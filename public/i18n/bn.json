@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — বিনামূল্যে বারকোড ও QR Code জেনারেটর",
+  "meta.title": "I Need Barcode",
   "meta.desc": "১০০টিরও বেশি ধরনের জন্য বিনামূল্যে বারকোড ও QR কোড জেনারেটর।",
   "nav.generator": "জেনারেটর",
   "nav.types": "বারকোডের ধরন",
@@ -147,5 +147,7 @@
   "articles.readMore": "আরও পড়ুন",
   "articles.all": "সব নিবন্ধ দেখুন",
   "articles.prev": "আগের নিবন্ধ",
-  "articles.next": "পরের নিবন্ধ"
+  "articles.next": "পরের নিবন্ধ",
+  "footer.privacy": "গোপনীয়তা নীতি",
+  "footer.terms": "শর্তাবলি"
 }

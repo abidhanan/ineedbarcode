@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Ókeypis strikamerkja- og QR-kóðagerð",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Ókeypis strikamerkja- og QR-kóðagerð fyrir yfir 100 gerðir.",
   "nav.generator": "Kóðagerð",
   "nav.types": "Gerðir strikamerkja",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lesa meira",
   "articles.all": "Sjá allar greinar",
   "articles.prev": "Fyrri greinar",
-  "articles.next": "Næstu greinar"
+  "articles.next": "Næstu greinar",
+  "footer.privacy": "Persónuverndarstefna",
+  "footer.terms": "Skilmálar"
 }

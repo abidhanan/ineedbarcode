@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — مولّد باركود وQR Code مجاني",
+  "meta.title": "I Need Barcode",
   "meta.desc": "مولّد باركود ورموز QR مجاني لأكثر من 100 نوع.",
   "nav.generator": "المولّد",
   "nav.types": "أنواع الباركود",
@@ -147,5 +147,7 @@
   "articles.readMore": "اقرأ المزيد",
   "articles.all": "عرض كل المقالات",
   "articles.prev": "المقالات السابقة",
-  "articles.next": "المقالات التالية"
+  "articles.next": "المقالات التالية",
+  "footer.privacy": "سياسة الخصوصية",
+  "footer.terms": "الشروط والأحكام"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Pembuat Barcode & QR Code Gratis",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Pembuat barcode sareng QR code gratis pikeun langkung ti 100 jinis.",
   "nav.generator": "Pembuat",
   "nav.types": "Jinis Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Baca salengkepna",
   "articles.all": "Tingali sadaya artikel",
   "articles.prev": "Artikel saméméhna",
-  "articles.next": "Artikel salajengna"
+  "articles.next": "Artikel salajengna",
+  "footer.privacy": "Kawijakan Privasi",
+  "footer.terms": "Sarat & Katangtuan"
 }

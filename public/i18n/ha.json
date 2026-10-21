@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Mai Ƙirƙirar Barcode da QR Code Kyauta",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Mai ƙirƙirar barcode da QR Code kyauta don nau'o'i fiye da 100.",
   "nav.generator": "Mai ƙirƙira",
   "nav.types": "Nau'o'in Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Ƙara karantawa",
   "articles.all": "Duba duk maƙaloli",
   "articles.prev": "Maƙalolin baya",
-  "articles.next": "Maƙaloli na gaba"
+  "articles.next": "Maƙaloli na gaba",
+  "footer.privacy": "Manufar Sirri",
+  "footer.terms": "Sharuɗɗa da Ka'idoji"
 }

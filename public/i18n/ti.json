@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — ብናጻ ናይ ባርኮድን QR ኮድን መፍጠሪ",
+  "meta.title": "I Need Barcode",
   "meta.desc": "ንልዕሊ 100 ዓይነታት ብናጻ ናይ ባርኮድን QR ኮድን መፍጠሪ።",
   "nav.generator": "መፍጠሪ",
   "nav.types": "ዓይነታት ባርኮድ",
@@ -147,5 +147,7 @@
   "articles.readMore": "ተወሳኺ ኣንብቡ",
   "articles.all": "ኩሎም ጽሑፋት ርአ",
   "articles.prev": "ዝሓለፉ ጽሑፋት",
-  "articles.next": "ዝቕጽሉ ጽሑፋት"
+  "articles.next": "ዝቕጽሉ ጽሑፋት",
+  "footer.privacy": "ፖሊሲ ብሕታዊነት",
+  "footer.terms": "ውዕላትን ኩነታትን"
 }

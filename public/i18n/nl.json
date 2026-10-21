@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Gratis barcode- en QR-codegenerator",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Gratis barcode- en QR-codegenerator voor meer dan 100 typen.",
   "nav.generator": "Generator",
   "nav.types": "Barcodetypen",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lees meer",
   "articles.all": "Alle artikelen bekijken",
   "articles.prev": "Vorige artikelen",
-  "articles.next": "Volgende artikelen"
+  "articles.next": "Volgende artikelen",
+  "footer.privacy": "Privacybeleid",
+  "footer.terms": "Algemene voorwaarden"
 }

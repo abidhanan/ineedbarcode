@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — ఉచిత బార్‌కోడ్ & QR Code జనరేటర్",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100కి పైగా రకాల కోసం ఉచిత బార్‌కోడ్ మరియు QR కోడ్ జనరేటర్.",
   "nav.generator": "జనరేటర్",
   "nav.types": "బార్‌కోడ్ రకాలు",
@@ -147,5 +147,7 @@
   "articles.readMore": "ఇంకా చదవండి",
   "articles.all": "అన్ని వ్యాసాలు చూడండి",
   "articles.prev": "మునుపటి వ్యాసాలు",
-  "articles.next": "తదుపరి వ్యాసాలు"
+  "articles.next": "తదుపరి వ్యాసాలు",
+  "footer.privacy": "గోప్యతా విధానం",
+  "footer.terms": "నిబంధనలు మరియు షరతులు"
 }

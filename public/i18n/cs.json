@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — bezplatný generátor čárových kódů a QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Bezplatný generátor čárových a QR kódů pro více než 100 typů.",
   "nav.generator": "Generátor",
   "nav.types": "Typy kódů",
@@ -147,5 +147,7 @@
   "articles.readMore": "Číst dále",
   "articles.all": "Zobrazit všechny články",
   "articles.prev": "Předchozí články",
-  "articles.next": "Další články"
+  "articles.next": "Další články",
+  "footer.privacy": "Zásady ochrany osobních údajů",
+  "footer.terms": "Podmínky užívání"
 }

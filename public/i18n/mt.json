@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Ġeneratur b'Xejn ta' Barcodes u QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Ġeneratur b'xejn ta' barcodes u QR codes għal aktar minn 100 tip.",
   "nav.generator": "Ġeneratur",
   "nav.types": "Tipi ta' Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Aqra aktar",
   "articles.all": "Ara l-artikli kollha",
   "articles.prev": "Artikli preċedenti",
-  "articles.next": "Artikli li jmiss"
+  "articles.next": "Artikli li jmiss",
+  "footer.privacy": "Politika tal-Privatezza",
+  "footer.terms": "Termini u Kundizzjonijiet"
 }

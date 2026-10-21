@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — bezmaksas svītrkodu un QR Code ģenerators",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Bezmaksas svītrkodu un QR kodu ģenerators vairāk nekā 100 veidiem.",
   "nav.generator": "Ģenerators",
   "nav.types": "Kodu veidi",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lasīt vairāk",
   "articles.all": "Skatīt visus rakstus",
   "articles.prev": "Iepriekšējie raksti",
-  "articles.next": "Nākamie raksti"
+  "articles.next": "Nākamie raksti",
+  "footer.privacy": "Privātuma politika",
+  "footer.terms": "Lietošanas noteikumi"
 }

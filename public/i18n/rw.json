@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Igikoresho cyo Gukora Barcode na QR Code ku Buntu",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Igikoresho cyo gukora barcode na QR Code ku buntu ku bwoko burenga 100.",
   "nav.generator": "Igikoresho",
   "nav.types": "Ubwoko bwa Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Soma byinshi",
   "articles.all": "Reba inyandiko zose",
   "articles.prev": "Inyandiko zabanje",
-  "articles.next": "Inyandiko zikurikira"
+  "articles.next": "Inyandiko zikurikira",
+  "footer.privacy": "Politiki y'Ibanga",
+  "footer.terms": "Amategeko n'Amabwiriza"
 }

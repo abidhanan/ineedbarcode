@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Үнэгүй баркод ба QR Code үүсгэгч",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100 гаруй төрлийг дэмждэг үнэгүй баркод ба QR Code үүсгэгч.",
   "nav.generator": "Үүсгэгч",
   "nav.types": "Баркодын төрлүүд",
@@ -147,5 +147,7 @@
   "articles.readMore": "Цааш унших",
   "articles.all": "Бүх нийтлэлийг харах",
   "articles.prev": "Өмнөх нийтлэлүүд",
-  "articles.next": "Дараагийн нийтлэлүүд"
+  "articles.next": "Дараагийн нийтлэлүүд",
+  "footer.privacy": "Нууцлалын бодлого",
+  "footer.terms": "Үйлчилгээний нөхцөл"
 }

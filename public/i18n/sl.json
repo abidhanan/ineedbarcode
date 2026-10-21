@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — brezplačni generator črtnih kod in QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Brezplačni generator črtnih in QR kod za več kot 100 vrst.",
   "nav.generator": "Generator",
   "nav.types": "Vrste kod",
@@ -147,5 +147,7 @@
   "articles.readMore": "Preberi več",
   "articles.all": "Prikaži vse članke",
   "articles.prev": "Prejšnji članki",
-  "articles.next": "Naslednji članki"
+  "articles.next": "Naslednji članki",
+  "footer.privacy": "Politika zasebnosti",
+  "footer.terms": "Pogoji uporabe"
 }

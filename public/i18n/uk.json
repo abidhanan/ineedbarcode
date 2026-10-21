@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — безкоштовний генератор штрихкодів і QR-кодів",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Безкоштовний генератор штрихкодів і QR-кодів понад 100 типів.",
   "nav.generator": "Генератор",
   "nav.types": "Типи штрихкодів",
@@ -147,5 +147,7 @@
   "articles.readMore": "Читати далі",
   "articles.all": "Усі статті",
   "articles.prev": "Попередні статті",
-  "articles.next": "Наступні статті"
+  "articles.next": "Наступні статті",
+  "footer.privacy": "Політика конфіденційності",
+  "footer.terms": "Умови використання"
 }

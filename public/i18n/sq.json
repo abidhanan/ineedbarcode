@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Gjenerues falas barkodesh dhe QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Gjenerues falas barkodesh dhe kodesh QR për mbi 100 lloje.",
   "nav.generator": "Gjeneruesi",
   "nav.types": "Llojet e kodeve",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lexo më shumë",
   "articles.all": "Shiko të gjithë artikujt",
   "articles.prev": "Artikujt e mëparshëm",
-  "articles.next": "Artikujt e radhës"
+  "articles.next": "Artikujt e radhës",
+  "footer.privacy": "Politika e privatësisë",
+  "footer.terms": "Kushtet e përdorimit"
 }

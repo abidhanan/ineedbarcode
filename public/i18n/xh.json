@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Isivelisi Simahla see-Barcode ne-QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Isivelisi simahla see-barcode ne-QR Code seentlobo ezingaphezu kwe-100.",
   "nav.generator": "Isivelisi",
   "nav.types": "Iintlobo zee-Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Funda ngakumbi",
   "articles.all": "Jonga onke amanqaku",
   "articles.prev": "Amanqaku angaphambili",
-  "articles.next": "Amanqaku alandelayo"
+  "articles.next": "Amanqaku alandelayo",
+  "footer.privacy": "Umgaqo-nkqubo Wabucala",
+  "footer.terms": "Imigaqo neMiqathango"
 }

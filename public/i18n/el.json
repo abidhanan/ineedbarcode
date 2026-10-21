@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Δωρεάν δημιουργία barcode και QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Δωρεάν δημιουργία barcode και κωδικών QR για πάνω από 100 τύπους.",
   "nav.generator": "Δημιουργία",
   "nav.types": "Τύποι κωδικών",
@@ -147,5 +147,7 @@
   "articles.readMore": "Διαβάστε περισσότερα",
   "articles.all": "Δείτε όλα τα άρθρα",
   "articles.prev": "Προηγούμενα άρθρα",
-  "articles.next": "Επόμενα άρθρα"
+  "articles.next": "Επόμενα άρθρα",
+  "footer.privacy": "Πολιτική Απορρήτου",
+  "footer.terms": "Όροι και Προϋποθέσεις"
 }

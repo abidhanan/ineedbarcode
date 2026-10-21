@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Անվճար շտրիխկոդի և QR կոդի գեներատոր",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Անվճար շտրիխկոդի և QR կոդի գեներատոր՝ ավելի քան 100 տեսակի համար։",
   "nav.generator": "Գեներատոր",
   "nav.types": "Շտրիխկոդի տեսակներ",
@@ -147,5 +147,7 @@
   "articles.readMore": "Կարդալ ավելին",
   "articles.all": "Դիտել բոլոր հոդվածները",
   "articles.prev": "Նախորդ հոդվածները",
-  "articles.next": "Հաջորդ հոդվածները"
+  "articles.next": "Հաջորդ հոդվածները",
+  "footer.privacy": "Գաղտնիության քաղաքականություն",
+  "footer.terms": "Օգտագործման պայմաններ"
 }

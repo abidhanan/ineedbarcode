@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — 무료 바코드 & QR Code 생성기",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100가지 이상의 유형을 지원하는 무료 바코드 및 QR Code 생성기.",
   "nav.generator": "생성기",
   "nav.types": "바코드 유형",
@@ -147,5 +147,7 @@
   "articles.readMore": "더 읽기",
   "articles.all": "모든 아티클 보기",
   "articles.prev": "이전 아티클",
-  "articles.next": "다음 아티클"
+  "articles.next": "다음 아티클",
+  "footer.privacy": "개인정보처리방침",
+  "footer.terms": "이용약관"
 }

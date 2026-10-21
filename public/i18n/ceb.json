@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Libreng Barcode & QR Code Generator",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Libreng barcode ug QR code generator para sa labaw sa 100 ka matang.",
   "nav.generator": "Generator",
   "nav.types": "Mga Matang sa Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Basaha pa",
   "articles.all": "Tan-awa ang tanang artikulo",
   "articles.prev": "Miaging mga artikulo",
-  "articles.next": "Sunod nga mga artikulo"
+  "articles.next": "Sunod nga mga artikulo",
+  "footer.privacy": "Palisiya sa Privacy",
+  "footer.terms": "Mga Termino ug Kondisyon"
 }

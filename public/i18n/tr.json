@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Ücretsiz Barkod ve QR Kod Oluşturucu",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100'den fazla tür için ücretsiz barkod ve QR kod oluşturucu.",
   "nav.generator": "Oluşturucu",
   "nav.types": "Barkod Türleri",
@@ -147,5 +147,7 @@
   "articles.readMore": "Devamını oku",
   "articles.all": "Tüm makaleleri gör",
   "articles.prev": "Önceki makaleler",
-  "articles.next": "Sonraki makaleler"
+  "articles.next": "Sonraki makaleler",
+  "footer.privacy": "Gizlilik Politikası",
+  "footer.terms": "Şartlar ve Koşullar"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Gratis Generator fir Barcoden & QR Coden",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Gratis Generator fir Barcoden a QR Coden, fir méi wéi 100 Typen.",
   "nav.generator": "Generator",
   "nav.types": "Barcode-Typen",
@@ -147,5 +147,7 @@
   "articles.readMore": "Weiderliesen",
   "articles.all": "All Artikelen ukucken",
   "articles.prev": "Vireg Artikelen",
-  "articles.next": "Nächst Artikelen"
+  "articles.next": "Nächst Artikelen",
+  "footer.privacy": "Dateschutzerklärung",
+  "footer.terms": "Notzungsbedéngungen"
 }

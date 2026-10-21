@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Kitengeneza Barcode na QR Code Bila Malipo",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Kitengeneza barcode na QR Code bila malipo kwa aina zaidi ya 100.",
   "nav.generator": "Kitengenezaji",
   "nav.types": "Aina za Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Soma zaidi",
   "articles.all": "Tazama makala zote",
   "articles.prev": "Makala zilizotangulia",
-  "articles.next": "Makala zinazofuata"
+  "articles.next": "Makala zinazofuata",
+  "footer.privacy": "Sera ya Faragha",
+  "footer.terms": "Sheria na Masharti"
 }

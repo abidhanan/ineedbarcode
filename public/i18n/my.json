@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — အခမဲ့ ဘားကုဒ်နှင့် QR Code ဖန်တီးစနစ်",
+  "meta.title": "I Need Barcode",
   "meta.desc": "အမျိုးအစား 100 ကျော်အတွက် အခမဲ့ ဘားကုဒ်နှင့် QR Code ဖန်တီးစနစ်။",
   "nav.generator": "ဖန်တီးစနစ်",
   "nav.types": "ဘားကုဒ် အမျိုးအစားများ",
@@ -147,5 +147,7 @@
   "articles.readMore": "ဆက်ဖတ်ရန်",
   "articles.all": "ဆောင်းပါးအားလုံးကြည့်ရန်",
   "articles.prev": "ယခင်ဆောင်းပါးများ",
-  "articles.next": "နောက်ဆောင်းပါးများ"
+  "articles.next": "နောက်ဆောင်းပါးများ",
+  "footer.privacy": "ကိုယ်ရေးအချက်အလက် မူဝါဒ",
+  "footer.terms": "စည်းကမ်းနှင့် သတ်မှတ်ချက်များ"
 }

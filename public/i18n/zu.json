@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Ijeneretha Yamahhala Yama-barcode ne-QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Ijeneretha yamahhala yama-barcode ne-QR Code yezinhlobo ezingaphezu kwe-100.",
   "nav.generator": "Ijeneretha",
   "nav.types": "Izinhlobo Zama-barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Funda kabanzi",
   "articles.all": "Bona zonke izindatshana",
   "articles.prev": "Izindatshana zangaphambilini",
-  "articles.next": "Izindatshana ezilandelayo"
+  "articles.next": "Izindatshana ezilandelayo",
+  "footer.privacy": "Inqubomgomo Yobumfihlo",
+  "footer.terms": "Imigomo Nemibandela"
 }

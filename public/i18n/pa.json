@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — ਮੁਫ਼ਤ ਬਾਰਕੋਡ ਅਤੇ QR Code ਜਨਰੇਟਰ",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100 ਤੋਂ ਵੱਧ ਕਿਸਮਾਂ ਲਈ ਮੁਫ਼ਤ ਬਾਰਕੋਡ ਅਤੇ QR ਕੋਡ ਜਨਰੇਟਰ।",
   "nav.generator": "ਜਨਰੇਟਰ",
   "nav.types": "ਬਾਰਕੋਡ ਕਿਸਮਾਂ",
@@ -147,5 +147,7 @@
   "articles.readMore": "ਹੋਰ ਪੜ੍ਹੋ",
   "articles.all": "ਸਾਰੇ ਲੇਖ ਵੇਖੋ",
   "articles.prev": "ਪਿਛਲੇ ਲੇਖ",
-  "articles.next": "ਅਗਲੇ ਲੇਖ"
+  "articles.next": "ਅਗਲੇ ਲੇਖ",
+  "footer.privacy": "ਪਰਦੇਦਾਰੀ ਨੀਤੀ",
+  "footer.terms": "ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ"
 }

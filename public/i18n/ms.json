@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Penjana Kod Bar & QR Code Percuma",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Penjana kod bar dan QR code percuma untuk lebih 100 jenis.",
   "nav.generator": "Penjana",
   "nav.types": "Jenis Kod Bar",
@@ -147,5 +147,7 @@
   "articles.readMore": "Baca lagi",
   "articles.all": "Lihat semua artikel",
   "articles.prev": "Artikel sebelumnya",
-  "articles.next": "Artikel seterusnya"
+  "articles.next": "Artikel seterusnya",
+  "footer.privacy": "Dasar Privasi",
+  "footer.terms": "Terma & Syarat"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — 無料バーコード & QR Code 作成ツール",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100 種類以上に対応した無料のバーコード・QR Code 作成ツール。",
   "nav.generator": "作成ツール",
   "nav.types": "バーコードの種類",
@@ -147,5 +147,7 @@
   "articles.readMore": "続きを読む",
   "articles.all": "すべての記事を見る",
   "articles.prev": "前の記事",
-  "articles.next": "次の記事"
+  "articles.next": "次の記事",
+  "footer.privacy": "プライバシーポリシー",
+  "footer.terms": "利用規約"
 }

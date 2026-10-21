@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Çêkera barkod û QR kodê ya belaş",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Çêkera barkod û QR kodê ya belaş ji bo zêdetirî 100 cureyan.",
   "nav.generator": "Çêker",
   "nav.types": "Cureyên barkodê",
@@ -147,5 +147,7 @@
   "articles.readMore": "Zêdetir bixwîne",
   "articles.all": "Hemû gotaran bibîne",
   "articles.prev": "Gotarên berê",
-  "articles.next": "Gotarên din"
+  "articles.next": "Gotarên din",
+  "footer.privacy": "Siyaseta Nepenîtiyê",
+  "footer.terms": "Merc û Şert"
 }

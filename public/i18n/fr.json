@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Générateur gratuit de codes-barres et QR codes",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Générateur gratuit de codes-barres et QR codes, plus de 100 types.",
   "nav.generator": "Générateur",
   "nav.types": "Types de codes-barres",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lire la suite",
   "articles.all": "Voir tous les articles",
   "articles.prev": "Articles précédents",
-  "articles.next": "Articles suivants"
+  "articles.next": "Articles suivants",
+  "footer.privacy": "Politique de confidentialité",
+  "footer.terms": "Conditions générales"
 }

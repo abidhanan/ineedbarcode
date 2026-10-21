@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — генератори ройгони штрихкод ва QR код",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Генератори ройгони штрихкод ва QR код барои зиёда аз 100 навъ.",
   "nav.generator": "Генератор",
   "nav.types": "Навъҳои штрихкод",
@@ -147,5 +147,7 @@
   "articles.readMore": "Бештар хонед",
   "articles.all": "Ҳамаи мақолаҳоро дидан",
   "articles.prev": "Мақолаҳои қаблӣ",
-  "articles.next": "Мақолаҳои навбатӣ"
+  "articles.next": "Мақолаҳои навбатӣ",
+  "footer.privacy": "Сиёсати махфият",
+  "footer.terms": "Шартҳои истифода"
 }

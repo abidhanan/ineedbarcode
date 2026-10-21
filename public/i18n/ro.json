@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — generator gratuit de coduri de bare și QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Generator gratuit de coduri de bare și QR pentru peste 100 de tipuri.",
   "nav.generator": "Generator",
   "nav.types": "Tipuri de coduri",
@@ -147,5 +147,7 @@
   "articles.readMore": "Citește mai mult",
   "articles.all": "Vezi toate articolele",
   "articles.prev": "Articolele anterioare",
-  "articles.next": "Articolele următoare"
+  "articles.next": "Articolele următoare",
+  "footer.privacy": "Politica de confidențialitate",
+  "footer.terms": "Termeni și condiții"
 }

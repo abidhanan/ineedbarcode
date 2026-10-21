@@ -1,5 +1,5 @@
 {
-  "meta.title": "Free Barcode & QR Code Generator — I Need Barcode",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Create barcodes and QR codes free without signing up. Supports 100+ formats, custom designs, bulk generation, and print-ready PNG downloads.",
   "nav.generator": "Generator",
   "nav.types": "Barcode Types",
@@ -147,5 +147,7 @@
   "articles.readMore": "Read more",
   "articles.all": "View all articles",
   "articles.prev": "Previous articles",
-  "articles.next": "Next articles"
+  "articles.next": "Next articles",
+  "footer.privacy": "Privacy Policy",
+  "footer.terms": "Terms & Conditions"
 }

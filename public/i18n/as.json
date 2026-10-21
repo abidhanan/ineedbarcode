@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — বিনামূলীয়া বাৰক'ড আৰু QR Code জেনেৰেটৰ",
+  "meta.title": "I Need Barcode",
   "meta.desc": "১০০ টাতকৈ অধিক প্ৰকাৰৰ বাবে বিনামূলীয়া বাৰক'ড আৰু QR ক'ড জেনেৰেটৰ।",
   "nav.generator": "জেনেৰেটৰ",
   "nav.types": "বাৰক'ডৰ প্ৰকাৰ",
@@ -147,5 +147,7 @@
   "articles.readMore": "অধিক পঢ়ক",
   "articles.all": "সকলো প্ৰবন্ধ চাওক",
   "articles.prev": "আগৰ প্ৰবন্ধ",
-  "articles.next": "পিছৰ প্ৰবন্ধ"
+  "articles.next": "পিছৰ প্ৰবন্ধ",
+  "footer.privacy": "গোপনীয়তা নীতি",
+  "footer.terms": "নিয়ম আৰু চৰ্তাৱলী"
 }

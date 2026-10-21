@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Gineadóir Saor in Aisce Barrachód & QR Code",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Gineadóir barrachód agus QR Code saor in aisce do os cionn 100 cineál.",
   "nav.generator": "Gineadóir",
   "nav.types": "Cineálacha Barrachód",
@@ -147,5 +147,7 @@
   "articles.readMore": "Léigh tuilleadh",
   "articles.all": "Féach ar gach alt",
   "articles.prev": "Ailt roimhe seo",
-  "articles.next": "Ailt ina dhiaidh seo"
+  "articles.next": "Ailt ina dhiaidh seo",
+  "footer.privacy": "Polasaí Príobháideachais",
+  "footer.terms": "Téarmaí agus Coinníollacha"
 }

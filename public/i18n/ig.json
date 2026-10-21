@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Ihe Mmepụta Barcode na QR Code n'Efu",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Ihe mmepụta barcode na QR Code n'efu maka ụdị karịrị 100.",
   "nav.generator": "Ihe mmepụta",
   "nav.types": "Ụdị Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Gụkwuo",
   "articles.all": "Lee edemede niile",
   "articles.prev": "Edemede gara aga",
-  "articles.next": "Edemede na-esote"
+  "articles.next": "Edemede na-esote",
+  "footer.privacy": "Iwu Nzuzo",
+  "footer.terms": "Usoro na Ọnọdụ"
 }

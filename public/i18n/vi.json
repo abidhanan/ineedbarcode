@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Tạo mã vạch & QR Code miễn phí",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Trình tạo mã vạch và QR Code miễn phí cho hơn 100 loại.",
   "nav.generator": "Trình tạo",
   "nav.types": "Loại mã vạch",
@@ -147,5 +147,7 @@
   "articles.readMore": "Đọc thêm",
   "articles.all": "Xem tất cả bài viết",
   "articles.prev": "Bài viết trước",
-  "articles.next": "Bài viết tiếp theo"
+  "articles.next": "Bài viết tiếp theo",
+  "footer.privacy": "Chính sách quyền riêng tư",
+  "footer.terms": "Điều khoản & Điều kiện"
 }

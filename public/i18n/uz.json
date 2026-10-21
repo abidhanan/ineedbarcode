@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Bepul shtrix-kod va QR kod generatori",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100 dan ortiq tur uchun bepul shtrix-kod va QR kod generatori.",
   "nav.generator": "Generator",
   "nav.types": "Shtrix-kod turlari",
@@ -147,5 +147,7 @@
   "articles.readMore": "Batafsil o‘qish",
   "articles.all": "Barcha maqolalarni ko‘rish",
   "articles.prev": "Oldingi maqolalar",
-  "articles.next": "Keyingi maqolalar"
+  "articles.next": "Keyingi maqolalar",
+  "footer.privacy": "Maxfiylik siyosati",
+  "footer.terms": "Foydalanish shartlari"
 }

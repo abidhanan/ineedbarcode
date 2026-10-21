@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Cynhyrchydd codau bar a chodau QR am ddim",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Cynhyrchydd codau bar a chodau QR am ddim ar gyfer dros 100 math.",
   "nav.generator": "Cynhyrchydd",
   "nav.types": "Mathau o godau bar",
@@ -147,5 +147,7 @@
   "articles.readMore": "Darllen mwy",
   "articles.all": "Gweld pob erthygl",
   "articles.prev": "Erthyglau blaenorol",
-  "articles.next": "Erthyglau nesaf"
+  "articles.next": "Erthyglau nesaf",
+  "footer.privacy": "Polisi Preifatrwydd",
+  "footer.terms": "Telerau ac Amodau"
 }

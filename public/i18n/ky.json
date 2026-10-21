@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — акысыз штрих-код жана QR код генератору",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100дөн ашык түр үчүн акысыз штрих-код жана QR код генератору.",
   "nav.generator": "Генератор",
   "nav.types": "Штрих-код түрлөрү",
@@ -147,5 +147,7 @@
   "articles.readMore": "Толугураак окуу",
   "articles.all": "Бардык макалаларды көрүү",
   "articles.prev": "Мурунку макалалар",
-  "articles.next": "Кийинки макалалар"
+  "articles.next": "Кийинки макалалар",
+  "footer.privacy": "Купуялык саясаты",
+  "footer.terms": "Колдонуу шарттары"
 }

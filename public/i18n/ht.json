@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Jeneratè Kòd Ba ak QR Code Gratis",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Jeneratè kòd ba ak QR Code gratis pou plis pase 100 kalite.",
   "nav.generator": "Jeneratè",
   "nav.types": "Kalite Kòd Ba",
@@ -147,5 +147,7 @@
   "articles.readMore": "Li plis",
   "articles.all": "Wè tout atik yo",
   "articles.prev": "Atik anvan yo",
-  "articles.next": "Atik swivan yo"
+  "articles.next": "Atik swivan yo",
+  "footer.privacy": "Politik Konfidansyalite",
+  "footer.terms": "Tèm ak Kondisyon"
 }

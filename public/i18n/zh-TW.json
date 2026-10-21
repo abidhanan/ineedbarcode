@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — 免費條碼與 QR Code 產生器",
+  "meta.title": "I Need Barcode",
   "meta.desc": "免費條碼與 QR Code 產生器，支援 100 多種類型。",
   "nav.generator": "產生器",
   "nav.types": "條碼類型",
@@ -147,5 +147,7 @@
   "articles.readMore": "閱讀更多",
   "articles.all": "查看所有文章",
   "articles.prev": "上一組文章",
-  "articles.next": "下一組文章"
+  "articles.next": "下一組文章",
+  "footer.privacy": "隱私權政策",
+  "footer.terms": "使用條款"
 }

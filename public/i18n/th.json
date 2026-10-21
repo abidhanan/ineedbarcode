@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — สร้างบาร์โค้ดและ QR Code ฟรี",
+  "meta.title": "I Need Barcode",
   "meta.desc": "เครื่องมือสร้างบาร์โค้ดและ QR Code ฟรี รองรับกว่า 100 ประเภท",
   "nav.generator": "ตัวสร้าง",
   "nav.types": "ประเภทบาร์โค้ด",
@@ -147,5 +147,7 @@
   "articles.readMore": "อ่านต่อ",
   "articles.all": "ดูบทความทั้งหมด",
   "articles.prev": "บทความก่อนหน้า",
-  "articles.next": "บทความถัดไป"
+  "articles.next": "บทความถัดไป",
+  "footer.privacy": "นโยบายความเป็นส่วนตัว",
+  "footer.terms": "ข้อกำหนดและเงื่อนไข"
 }

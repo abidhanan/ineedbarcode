@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — nemokamas brūkšninių kodų ir QR Code generatorius",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Nemokamas brūkšninių ir QR kodų generatorius daugiau nei 100 tipų.",
   "nav.generator": "Generatorius",
   "nav.types": "Kodų tipai",
@@ -147,5 +147,7 @@
   "articles.readMore": "Skaityti daugiau",
   "articles.all": "Visi straipsniai",
   "articles.prev": "Ankstesni straipsniai",
-  "articles.next": "Kiti straipsniai"
+  "articles.next": "Kiti straipsniai",
+  "footer.privacy": "Privatumo politika",
+  "footer.terms": "Naudojimosi sąlygos"
 }

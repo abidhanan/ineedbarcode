@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Mea Fai Barcode ma QR Code e Fua",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Mea fai barcode ma QR Code e fua mo ituaiga e silia ma le 100.",
   "nav.generator": "Mea fai",
   "nav.types": "Ituaiga Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Faitau atili",
   "articles.all": "Vaai uma tusitusiga",
   "articles.prev": "Tusitusiga muamua",
-  "articles.next": "Tusitusiga o sosoo ai"
+  "articles.next": "Tusitusiga o sosoo ai",
+  "footer.privacy": "Faiga Faavae o le Faalilolilo",
+  "footer.terms": "Aiaiga ma Tuutuuga"
 }

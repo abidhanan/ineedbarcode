@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Gratis Strepieskode- en QR Code-generator",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Gratis strepieskode- en QR Code-generator vir meer as 100 tipes.",
   "nav.generator": "Generator",
   "nav.types": "Strepieskodetipes",
@@ -147,5 +147,7 @@
   "articles.readMore": "Lees meer",
   "articles.all": "Sien alle artikels",
   "articles.prev": "Vorige artikels",
-  "articles.next": "Volgende artikels"
+  "articles.next": "Volgende artikels",
+  "footer.privacy": "Privaatheidsbeleid",
+  "footer.terms": "Bepalings en Voorwaardes"
 }

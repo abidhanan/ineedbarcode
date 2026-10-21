@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — Olùṣẹ̀dá Barcode àti QR Code Ọ̀fẹ́",
+  "meta.title": "I Need Barcode",
   "meta.desc": "Olùṣẹ̀dá barcode àti QR Code ọ̀fẹ́ fún irú tó lé ní 100.",
   "nav.generator": "Olùṣẹ̀dá",
   "nav.types": "Àwọn Irú Barcode",
@@ -147,5 +147,7 @@
   "articles.readMore": "Ka síwájú",
   "articles.all": "Wo gbogbo àpilẹ̀kọ",
   "articles.prev": "Àwọn àpilẹ̀kọ ti tẹ́lẹ̀",
-  "articles.next": "Àwọn àpilẹ̀kọ tó kàn"
+  "articles.next": "Àwọn àpilẹ̀kọ tó kàn",
+  "footer.privacy": "Ìlànà Àṣírí",
+  "footer.terms": "Àwọn Òfin àti Àdéhùn"
 }

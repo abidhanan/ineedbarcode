@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — இலவச பார்கோடு & QR Code ஜெனரேட்டர்",
+  "meta.title": "I Need Barcode",
   "meta.desc": "100-க்கும் மேற்பட்ட வகைகளுக்கான இலவச பார்கோடு மற்றும் QR குறியீடு ஜெனரேட்டர்.",
   "nav.generator": "ஜெனரேட்டர்",
   "nav.types": "பார்கோடு வகைகள்",
@@ -147,5 +147,7 @@
   "articles.readMore": "மேலும் படிக்க",
   "articles.all": "அனைத்து கட்டுரைகளையும் காண்க",
   "articles.prev": "முந்தைய கட்டுரைகள்",
-  "articles.next": "அடுத்த கட்டுரைகள்"
+  "articles.next": "அடுத்த கட்டுரைகள்",
+  "footer.privacy": "தனியுரிமைக் கொள்கை",
+  "footer.terms": "விதிமுறைகள் மற்றும் நிபந்தனைகள்"
 }

@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — ነፃ የባርኮድ እና የQR ኮድ ማመንጫ",
+  "meta.title": "I Need Barcode",
   "meta.desc": "ከ100 በላይ ዓይነቶች ነፃ የባርኮድ እና የQR ኮድ ማመንጫ።",
   "nav.generator": "ማመንጫ",
   "nav.types": "የባርኮድ ዓይነቶች",
@@ -147,5 +147,7 @@
   "articles.readMore": "ተጨማሪ ያንብቡ",
   "articles.all": "ሁሉንም ጽሑፎች ይመልከቱ",
   "articles.prev": "ቀዳሚ ጽሑፎች",
-  "articles.next": "ቀጣይ ጽሑፎች"
+  "articles.next": "ቀጣይ ጽሑፎች",
+  "footer.privacy": "የግላዊነት መመሪያ",
+  "footer.terms": "ውሎች እና ሁኔታዎች"
 }

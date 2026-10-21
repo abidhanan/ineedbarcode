@@ -1,5 +1,5 @@
 {
-  "meta.title": "I Need Barcode — නොමිලේ බාර්කෝඩ් සහ QR Code උත්පාදකය",
+  "meta.title": "I Need Barcode",
   "meta.desc": "වර්ග 100කට වඩා සඳහා නොමිලේ බාර්කෝඩ් සහ QR කේත උත්පාදකය.",
   "nav.generator": "උත්පාදකය",
   "nav.types": "බාර්කෝඩ් වර්ග",
@@ -147,5 +147,7 @@
   "articles.readMore": "තවත් කියවන්න",
   "articles.all": "සියලු ලිපි බලන්න",
   "articles.prev": "පෙර ලිපි",
-  "articles.next": "ඊළඟ ලිපි"
+  "articles.next": "ඊළඟ ලිපි",
+  "footer.privacy": "රහස්‍යතා ප්‍රතිපත්තිය",
+  "footer.terms": "නියම සහ කොන්දේසි"
 }
