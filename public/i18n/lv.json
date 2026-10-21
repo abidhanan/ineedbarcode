@@ -107,7 +107,7 @@
   "faq.q1": "Vai I Need Barcode ir bez maksas?",
   "faq.a1": "Jā. Varat izveidot un lejupielādēt tik kodu, cik vēlaties, bez reģistrācijas un bez ūdenszīmes.",
   "faq.q2": "Kuru koda veidu izvēlēties?",
-  "faq.a2": "Saitēm, Wi-Fi un kontaktiem izmantojiet QR Code. Mazumtirdzniecības precēm — EAN-13 vai UPC-A, piegādei un krājumiem — Code 128, bet mazām etiķetēm — Data Matrix.",
+  "faq.a2": "Saitēm, Wi-Fi un kontaktiem izmantojiet QR Code. Mazumtirdzniecības precēm - EAN-13 vai UPC-A, piegādei un krājumiem - Code 128, bet mazām etiķetēm - Data Matrix.",
   "faq.q3": "Vai kodus drīkst izmantot komerciāli?",
   "faq.a3": "Jā. Izveidotos attēlus varat izmantot uz precēm, iepakojuma un drukātos materiālos. Mazumtirdzniecības preču EAN un UPC numurus reģistrējiet GS1.",
   "faq.q4": "Kāpēc mans kods rāda kļūdu?",

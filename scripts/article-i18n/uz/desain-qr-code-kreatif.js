@@ -11,7 +11,7 @@ module.exports = {
     ["QR Code ga yozuv yoki ramka qoʻshish mumkinmi?", "Mumkin. «MENI SKANERLANG» kabi chaqiriqli ramka, agar QR Code ni yopib qoʻymasa, aksincha, odamlarga uning vazifasini tushunishga yordam beradi."]
   ],
   body: `
-<p>Oq-qora QR Code, albatta, oʻz vazifasini bajaradi, ammo qadoq, taklifnoma yoki reklama materiallarida koʻpincha quruq koʻrinadi. Ozgina dizayn qoʻshib, QR Code ni vazifasini yoʻqotmagan holda jozibaliroq qilish mumkin. Asosiysi — qaysi qismlarni oʻzgartirish mumkinligi va qaysilari butunligicha qolishi kerakligini tushunish.</p>
+<p>Oq-qora QR Code, albatta, oʻz vazifasini bajaradi, ammo qadoq, taklifnoma yoki reklama materiallarida koʻpincha quruq koʻrinadi. Ozgina dizayn qoʻshib, QR Code ni vazifasini yoʻqotmagan holda jozibaliroq qilish mumkin. Asosiysi - qaysi qismlarni oʻzgartirish mumkinligi va qaysilari butunligicha qolishi kerakligini tushunish.</p>
 
 <h2>Tashqi shakl: yurak, doira va boshqalar</h2>
 <p><a href="/?type=qrcode">QR Code generatori</a>ning Dizayn boʻlimida doira, yurak, olti burchak, sakkiz burchak, yulduz yoki romb kabi shakllarni tanlashingiz mumkin. Asl QR Code markazda qoladi, qolgan qismi esa tanlangan shakl hosil boʻlguncha bezak naqshi bilan toʻldiriladi. Bezak naqshida maʼlumot boʻlmaydi, shuning uchun asl QR Code atrofida boʻsh oraliq boʻlsa, u skanerlashga xalaqit bermaydi.</p>

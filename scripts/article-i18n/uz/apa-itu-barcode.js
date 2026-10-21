@@ -11,7 +11,7 @@ module.exports = {
     ["Shtrix-kod yaratish pullikmi?", "Yoʻq. Shtrix-kod tasvirini bepul yaratish mumkin, masalan, I Need Barcode saytida. Pullik roʻyxatdan oʻtkazish faqat EAN-13 kabi chakana savdo mahsulotlari shtrix-kodlari uchun GS1 orqali beriladigan rasmiy raqamlarga kerak."]
   ],
   body: `
-<p>Shtrix-kod — bu maʼlumotni mashina oʻqiy oladigan naqsh koʻrinishida yozish usuli. Bu naqsh odatda turli kenglikdagi qora va oq chiziqlardan yoki kvadrat ichida joylashgan mayda katakchalardan iborat boʻladi. Skanerlanganda naqsh yana raqam yoki matnga aylantiriladi, masalan, mahsulot kodi, yuk xati raqami yoki sayt manzili.</p>
+<p>Shtrix-kod - bu maʼlumotni mashina oʻqiy oladigan naqsh koʻrinishida yozish usuli. Bu naqsh odatda turli kenglikdagi qora va oq chiziqlardan yoki kvadrat ichida joylashgan mayda katakchalardan iborat boʻladi. Skanerlanganda naqsh yana raqam yoki matnga aylantiriladi, masalan, mahsulot kodi, yuk xati raqami yoki sayt manzili.</p>
 <p>Mashina oʻqigani uchun shtrix-kod kodni qoʻlda terishdan ancha tezroq va xatolar ham kamroq boʻladi. Shu sababli shtrix-kodlar kassalarda, omborlarda, kasalxonalarda, chiptalarda va hatto oziq-ovqat qadoqlarida qoʻllaniladi.</p>
 
 <h2>Shtrix-kodning qisqacha tarixi</h2>

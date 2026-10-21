@@ -6,12 +6,41 @@
 // - Penanda versi aset (?v=) agar pengunjung tidak memakai cache lama.
 const fs = require('fs');
 const path = require('path');
+// Windows kadang mengunci file sesaat (antivirus / server pratinjau): ulangi penulisan beberapa kali
+const writeOnce = fs.writeFileSync;
+fs.writeFileSync = function () {
+  for (let i = 0; ; i++) {
+    try { return writeOnce.apply(fs, arguments); } catch (e) {
+      if (i >= 30 || !/^(UNKNOWN|EPERM|EBUSY|EACCES)$/.test(e.code)) throw e;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
+    }
+  }
+};
 const articles = require('./articles');
 const articleFaq = require('./articles-faq');
 const photos = require('./articles-photos');
 
 const SITE = 'https://ineedbarcode.com';
 const root = path.join(__dirname, '..', 'public');
+const srcDir = path.join(__dirname, '..', 'src');
+
+// ---------- Aset: src/ -> public/ (diperkecil dengan esbuild) ----------
+// JavaScript & CSS ditulis di src/, hasil kecil dan siap pakai ditulis ke public/. bwip-js dimuat belakangan
+// oleh app.js, jadi daftar jenis barcode disisipkan ke app.js agar halaman tidak menunggu pustaka itu.
+const esbuild = require('esbuild');
+(function buildAssets() {
+  const symbols = JSON.stringify(require('bwip-js').symbolList.map((x) => ({ bcid: x.bcid, desc: x.desc, text: x.text, opts: x.opts })));
+  let before = 0, after = 0;
+  fs.readdirSync(srcDir).forEach((name) => {
+    const code = fs.readFileSync(path.join(srcDir, name), 'utf8');
+    const css = name.endsWith('.css');
+    const input = name === 'app.js' ? 'window.INB_SYMBOLS=' + symbols + ';\n' + code : code;
+    const out = esbuild.transformSync(input, { loader: css ? 'css' : 'js', minify: true, target: css ? 'chrome90' : 'es2017', legalComments: 'none' }).code;
+    fs.writeFileSync(path.join(root, name), out);
+    before += code.length; after += out.length;
+  });
+  console.log('aset:', Math.round(before / 1024) + ' KB -> ' + Math.round(after / 1024) + ' KB');
+})();
 const file = path.join(root, 'index.html');
 const BOOT_LANG = 'id';
 const boot = JSON.parse(fs.readFileSync(path.join(root, 'i18n', BOOT_LANG + '.json'), 'utf8'));
@@ -75,7 +104,7 @@ const categories = (() => {
 // Bahasa Indonesia dari scripts/articles*.js; bahasa lain dari scripts/article-i18n/<kode>/ (periksa dengan
 // node scripts/check-article-i18n.js). Bahasa yang terjemahannya belum lengkap dilewati.
 const W = {};
-new Function('window', fs.readFileSync(path.join(root, 'langs.js'), 'utf8'))(W);
+new Function('window', fs.readFileSync(path.join(srcDir, 'langs.js'), 'utf8'))(W);
 // Hanya terjemahan yang lolos pemeriksaan struktur yang dipakai
 const CHECKED = (() => {
   const r = require('child_process').spawnSync(process.execPath, [path.join(__dirname, 'check-article-i18n.js')], { encoding: 'utf8' });
@@ -153,13 +182,14 @@ const catLabel = (L, key) => {
 };
 
 // ---------- Kartu artikel (beranda, /artikel, "Artikel Lainnya"): markup sama dengan ineedsave.site ----------
-function card(a, readMoreAttr, L) {
+function card(a, readMoreAttr, L, level) {
+  const hl = level || 'h3'; // daftar artikel (di bawah h1) memakai h2 agar urutan judul tidak melompat
   L = L || ID;
   const it = L.items[a.slug];
   return '<article class="article-card" data-slug="' + a.slug + '" data-categories="' + a.tags.map(catKey).join('|') + '"><a class="article-link" href="' + L.base + '/artikel/' + a.slug + '">' +
     '<div class="article-thumb"><img src="/artikel/img/cards/' + a.slug + '.webp?v=' + COVER_V + '" alt="' + escAttr(it.title) + '" width="640" height="336" loading="lazy" decoding="async"></div>' +
     '<div class="article-body"><div class="article-tags">' + it.tags.map((x) => '<span>' + escText(x) + '</span>').join('') + '</div>' +
-    '<h3 class="article-title">' + escText(it.title) + '</h3><p class="article-excerpt">' + escText(it.desc) + '</p>' +
+    '<' + hl + ' class="article-title">' + escText(it.title) + '</' + hl + '><p class="article-excerpt">' + escText(it.desc) + '</p>' +
     '<div class="article-meta">' + icons.cal + '<time datetime="' + iso(a.date) + '">' + L.date(a.date) + '</time></div>' +
     '<span class="article-more"><span' + (readMoreAttr ? ' data-i18n="articles.readMore"' : '') + '>' + escText(readMoreAttr ? t('articles.readMore') : L.ui.readMore) + '</span>' + icons.arrow + '</span>' +
     '</div></a></article>';
@@ -231,12 +261,12 @@ html = html.replace(/<span class="picker-value[^"]*">[^<]*<\/span>/, '<span clas
 html = html.replace(/<div class="preview[^"]*" id="preview" aria-live="polite">[^<]*<\/div>/, '<div class="preview empty" id="preview" aria-live="polite">' + escText(t('how.s1d')) + '</div>');
 const made = t('footer.madeBy').split('{name}');
 html = html.replace(/<span id="madeBy">[\s\S]*?<\/a>[^<]*<\/span>/, '<span id="madeBy">' + escText(made[0]) +
-  '<a href="https://abidhanan.my.id" target="_blank" rel="noopener"><strong>Abid Hanan Wicaksono</strong></a>' + escText(made.slice(1).join('')) + '</span>');
+  '<a href="https://abidhanan.my.id" target="_blank" rel="noopener"><strong>Abid Hanan Wicaksono</strong></a>' + escText(/^s*[.。]?s*$/.test(made.slice(1).join('')) ? '' : made.slice(1).join('')) + '</span>');
 
 // Teks awal untuk JavaScript
 const bootTag = '<!--boot--><script>window.INB_BOOT={"lang":"' + BOOT_LANG + '","strings":' + json(boot) + ',"en":' + json(en) + '};</script><!--/boot-->';
 if (/<!--boot-->[\s\S]*?<!--\/boot-->/.test(html)) html = html.replace(/<!--boot-->[\s\S]*?<!--\/boot-->/, bootTag);
-else html = html.replace(/  <script(?: defer)? src="\/vendor\/bwip-js-min\.js"><\/script>/, '  ' + bootTag + '\n  <script defer src="/vendor/bwip-js-min.js"></script>');
+else html = html.replace('  <script defer src="/analytics.js', '  ' + bootTag + '\n  <script defer src="/analytics.js');
 
 // Penanda versi aset
 html = html.replace(/(\/(?:styles\.css|app\.js|design\.js|langs\.js|analytics\.js|favicon(?:-light|-dark)?\.svg|apple-touch-icon\.png))\?v=[0-9]+/g, '$1?v=' + v);
@@ -257,11 +287,11 @@ const footerFor = (L) => {
   const parts = L.t('footer.madeBy').split('{name}');
   const lg = legalOf(L).labels;
   return stripI18n(homeLinks(fillI18n(footerSrc, L.t), L)
-    .replace(/<a href="\/kebijakan-privasi"[^>]*>[^<]*<\/a>/, '<a href="' + L.base + '/kebijakan-privasi">' + escText(lg.privacy) + '</a>')
-    .replace(/<a href="\/syarat-ketentuan"[^>]*>[^<]*<\/a>/, '<a href="' + L.base + '/syarat-ketentuan">' + escText(lg.terms) + '</a>')
+    .replace(/<a [^>]*href="\/kebijakan-privasi"[^>]*>[^<]*<\/a>/, '<a class="btn btn-outline" href="' + L.base + '/kebijakan-privasi">' + escText(lg.privacy) + '</a>')
+    .replace(/<a [^>]*href="\/syarat-ketentuan"[^>]*>[^<]*<\/a>/, '<a class="btn btn-outline" href="' + L.base + '/syarat-ketentuan">' + escText(lg.terms) + '</a>')
     .replace(/ data-lang-href="[^"]*"/g, '')
     .replace(/<span id="madeBy">[\s\S]*?<\/a>[^<]*<\/span>/, '<span id="madeBy">' + escText(parts[0]) +
-      '<a href="https://abidhanan.my.id" target="_blank" rel="noopener"><strong>Abid Hanan Wicaksono</strong></a>' + escText(parts.slice(1).join('')) + '</span>'));
+      '<a href="https://abidhanan.my.id" target="_blank" rel="noopener"><strong>Abid Hanan Wicaksono</strong></a>' + escText(/^\s*[.。]?\s*$/.test(parts.slice(1).join('')) ? '' : parts.slice(1).join('')) + '</span>'));
 };
 // Tautan di isi artikel: artikel lain & beranda tetap dalam bahasa yang sama
 const localizeLinks = (body, L) => (L.code === BOOT_LANG ? body : body
@@ -273,6 +303,7 @@ const urlFor = (L, rest) => SITE + L.base + rest;
 const X_DEFAULT = LOC.find((L) => L.code === 'en') || ID;
 const AVAILABLE = LOC.map((L) => L.code);
 
+const GEO_EARLY = html.match(/<!--geo-->([\s\S]*?)<!--\/geo-->/)[1];
 const FAVICON_SWAP = html.match(/<!--favicon-->([\s\S]*?)<!--\/favicon-->/)[1];
 
 function page({ L, rest, title, desc, image, imageAlt, imageH, type, ld, main, scripts, langs, onArticles }) {
@@ -283,8 +314,11 @@ function page({ L, rest, title, desc, image, imageAlt, imageH, type, ld, main, s
     '  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' +
     '  <title>' + escText(title) + '</title>\n' +
     '  <meta name="description" content="' + escAttr(desc) + '">\n' +
+    '  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n' +
+    '  <meta name="author" content="Abid Hanan Wicaksono">\n' +
     '  <meta name="color-scheme" content="dark">\n' +
     '  <meta name="theme-color" content="#0A0A0A">\n' +
+    '  <link rel="manifest" href="/manifest.webmanifest">\n  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs">\n' +
     '  <link rel="canonical" href="' + url + '">\n' +
     ALT.map((A) => '  <link rel="alternate" hreflang="' + A.code + '" href="' + urlFor(A, rest) + '">\n').join('') +
     '  <link rel="alternate" hreflang="x-default" href="' + urlFor(X_DEFAULT, rest) + '">\n' +
@@ -299,7 +333,7 @@ function page({ L, rest, title, desc, image, imageAlt, imageH, type, ld, main, s
     '  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:title" content="' + escAttr(title) + '">\n' +
     '  <meta name="twitter:description" content="' + escAttr(desc) + '">\n  <meta name="twitter:image" content="' + image + '">\n' +
     '  <link rel="icon" href="/favicon.svg?v=' + v + '" type="image/svg+xml" data-light="/favicon-light.svg?v=' + v + '" data-dark="/favicon-dark.svg?v=' + v + '">\n' +
-    '  ' + FAVICON_SWAP + '\n  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=' + v + '">\n' +
+    '  ' + GEO_EARLY + '\n  ' + FAVICON_SWAP + '\n  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=' + v + '">\n' +
     '  <link rel="preload" href="/fonts/noto-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>\n' +
     (font ? '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=' + font.replace(/ /g, '+') + ':wght@400;500;600;700&amp;display=swap">\n' : '') +
     '  <link rel="stylesheet" href="/styles.css?v=' + v + '">\n' +
@@ -364,8 +398,8 @@ for (const L of LOC) {
       '        <div class="post-stats" data-slug="' + a.slug + '" data-url="' + url + '" data-title="' + escAttr(it.title) + '">\n' +
       '          <div class="stats-left">\n' +
       '            <span class="stat" title="' + escAttr(ui.views) + '">' + icons.eye + '<span class="stat-count" data-views>0</span><span class="sr-only">' + escText(ui.viewsSr) + '</span></span>\n' +
-      '            <button class="stat stat-button" type="button" data-like aria-pressed="false" aria-label="' + escAttr(ui.like) + '">' + icons.heart + '<span class="stat-count" data-likes>0</span></button>\n' +
-      '            <button class="stat stat-button" type="button" data-share aria-label="' + escAttr(ui.share) + '">' + icons.share + '<span class="stat-count" data-shares>0</span></button>\n' +
+      '            <button class="stat stat-button" type="button" data-like aria-pressed="false" aria-label="' + escAttr(ui.like) + '">' + icons.heart + '<span class="stat-count" aria-hidden="true" data-likes>0</span></button>\n' +
+      '            <button class="stat stat-button" type="button" data-share aria-label="' + escAttr(ui.share) + '">' + icons.share + '<span class="stat-count" aria-hidden="true" data-shares>0</span></button>\n' +
       '          </div>\n          <div class="socials share-links">\n' +
       '            <a class="social" href="https://wa.me/?text=' + shareText + '" target="_blank" rel="noopener" data-share-link aria-label="' + via('WhatsApp') + '">' + icons.wa + '</a>\n' +
       '            <a class="social" href="https://www.facebook.com/sharer/sharer.php?u=' + enc(url) + '" target="_blank" rel="noopener" data-share-link aria-label="' + via('Facebook') + '">' + icons.fb + '</a>\n' +
@@ -387,12 +421,16 @@ for (const L of LOC) {
       '@context': 'https://schema.org',
       '@graph': [
         { '@type': 'Article', headline: it.title, description: it.desc, image: [img], datePublished: iso(a.date), dateModified: iso(a.date),
-          inLanguage: L.code, author, publisher, mainEntityOfPage: { '@type': 'WebPage', '@id': url }, keywords: it.tags.join(', ') },
+          inLanguage: L.code, author, publisher, mainEntityOfPage: { '@type': 'WebPage', '@id': url }, keywords: it.tags.join(', '),
+          '@id': url + '#article', url, isAccessibleForFree: true, articleSection: it.tags[0], thumbnailUrl: img,
+          wordCount: it.body.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length,
+          isPartOf: { '@id': SITE + '/#website' }, about: { '@id': SITE + '/#application' },
+          speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.post-head h1', '.post-body > p:first-of-type'] } },
         { '@type': 'BreadcrumbList', itemListElement: crumbs.concat([{ name: it.title, item: url }]).map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })) }
       ].concat(faq.length ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f[0], acceptedAnswer: { '@type': 'Answer', text: f[1] } })) }] : [])
     };
     fs.writeFileSync(path.join(dir, a.slug + '.html'),
-      page({ L, rest, title: it.title + ' — I Need Barcode', desc: it.desc, image: img, imageAlt: it.title, imageH: 630, type: 'article', ld, main, scripts: articleScripts }));
+      page({ L, rest, title: it.title + ' - I Need Barcode', desc: it.desc, image: img, imageAlt: it.title, imageH: 630, type: 'article', ld, main, scripts: articleScripts }));
     pages++;
   }
 
@@ -406,9 +444,9 @@ for (const L of LOC) {
     '        <button class="category-chip" type="button" data-category="" aria-pressed="true">' + escText(ui.all) + '</button>\n' +
     categories.map((c) => '        <button class="category-chip" type="button" data-category="' + c.key + '" aria-pressed="false">' + escText(catLabel(L, c.key)) + '</button>\n').join('') +
     '      </div>\n' +
-    '      <div class="article-grid">' + sorted.map((x) => card(x, false, L)).join('') + '</div>\n' +
+    '      <div class="article-grid">' + sorted.map((x) => card(x, false, L, 'h2')).join('') + '</div>\n' +
     '    </div>\n  </main>';
-  const listTitle = ui.articles + ' — I Need Barcode';
+  const listTitle = ui.articles + ' - I Need Barcode';
   const listLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -459,25 +497,70 @@ for (const L of LOC.filter((A) => LEGAL[A.code])) {
     const dir = path.join(root, L.base.slice(1));
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, pg.rest.slice(1) + '.html'),
-      page({ L, rest: pg.rest, title: p.title + ' — I Need Barcode', desc: p.desc, image: SITE + '/og-image.png?v=1', imageAlt: 'I Need Barcode', imageH: 630, type: 'website', ld, main, langs: LEGAL_LANGS, onArticles: false,
+      page({ L, rest: pg.rest, title: p.title + ' - I Need Barcode', desc: p.desc, image: SITE + '/og-image.png?v=1', imageAlt: 'I Need Barcode', imageH: 630, type: 'website', ld, main, langs: LEGAL_LANGS, onArticles: false,
         scripts: '  <script src="/article.js?v=' + v + '"></script>\n' }));
     legalPages++;
   }
 }
 
-// ---------- sitemap.xml & robots.txt ----------
+// ---------- sitemap.xml (dengan hreflang), robots.txt, llms.txt, manifest ----------
 const today = new Date().toISOString().slice(0, 10);
+const xe = (x) => String(x).replace(/&/g, '&amp;');
 const urls = [{ loc: SITE + '/', lastmod: today, pr: '1.0' }];
-for (const code of LEGAL_LANGS) {
-  const L = LOC.find((A) => A.code === code);
-  for (const pg of LEGAL_PAGES) urls.push({ loc: urlFor(L, pg.rest), lastmod: LEGAL_DATE, pr: '0.3' });
-}
+const alt = (rest, langs) => langs.map((A) => ({ code: A.code, href: urlFor(A, rest) }));
+const LEGAL_L = LOC.filter((A) => LEGAL[A.code]);
+for (const pg of LEGAL_PAGES) for (const L of LEGAL_L) urls.push({ loc: urlFor(L, pg.rest), lastmod: LEGAL_DATE, pr: '0.3', alt: alt(pg.rest, LEGAL_L) });
 for (const L of LOC) {
-  urls.push({ loc: urlFor(L, '/artikel'), lastmod: sorted[0].date, pr: L === ID ? '0.8' : '0.6' });
-  for (const a of sorted) urls.push({ loc: urlFor(L, '/artikel/' + a.slug), lastmod: a.date, pr: L === ID ? '0.7' : '0.5' });
+  urls.push({ loc: urlFor(L, '/artikel'), lastmod: sorted[0].date, pr: L === ID ? '0.8' : '0.6', alt: alt('/artikel', LOC) });
+  for (const a of sorted) urls.push({ loc: urlFor(L, '/artikel/' + a.slug), lastmod: a.date, pr: L === ID ? '0.7' : '0.5', alt: alt('/artikel/' + a.slug, LOC) });
 }
-fs.writeFileSync(path.join(root, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  urls.map((u) => '  <url><loc>' + u.loc + '</loc><lastmod>' + u.lastmod + '</lastmod><priority>' + u.pr + '</priority></url>').join('\n') + '\n</urlset>\n');
-fs.writeFileSync(path.join(root, 'robots.txt'), 'User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ' + SITE + '/sitemap.xml\n');
+const xdef = (rest, langs) => '<xhtml:link rel="alternate" hreflang="x-default" href="' + urlFor(langs.find((A) => A.code === 'en') || ID, rest) + '"/>';
+fs.writeFileSync(path.join(root, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' +
+  urls.map((u) => '  <url><loc>' + xe(u.loc) + '</loc><lastmod>' + u.lastmod + '</lastmod><priority>' + u.pr + '</priority>' +
+    (u.alt ? u.alt.map((x) => '<xhtml:link rel="alternate" hreflang="' + x.code + '" href="' + xe(x.href) + '"/>').join('') : '') + '</url>').join('\n') + '\n</urlset>\n');
+
+// robots.txt: semua crawler diizinkan, termasuk crawler AI (GEO / AIO), plus sitemap & llms.txt
+const AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'DuckAssistBot', 'CCBot', 'meta-externalagent', 'Amazonbot', 'cohere-ai', 'MistralAI-User'];
+fs.writeFileSync(path.join(root, 'robots.txt'), 'User-agent: *\nAllow: /\nDisallow: /api/\n\n' +
+  AI_BOTS.map((b) => 'User-agent: ' + b + '\nAllow: /\nDisallow: /api/\n').join('\n') +
+  '\nSitemap: ' + SITE + '/sitemap.xml\n');
+
+// llms.txt (ringkasan untuk mesin jawaban AI) dan llms-full.txt (isi artikel lengkap)
+const EN = LOC.find((A) => A.code === 'en') || ID;
+const plain = (h) => h.replace(/<h2>/g, '\n## ').replace(/<h3>/g, '\n### ').replace(/<li>/g, '\n- ').replace(/<\/(p|ul|ol|table|tr|h2|h3)>/g, '\n').replace(/<\/t[dh]>/g, ' | ')
+  .replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+const faqEn = [1, 2, 3, 4].map((n) => '- ' + en['faq.q' + n] + ' ' + en['faq.a' + n]).join('\n');
+const langList = LOC.map((L) => L.meta[1] + ' (' + L.code + ')').join(', ');
+fs.writeFileSync(path.join(root, 'llms.txt'), '# I Need Barcode\n\n' +
+  '> I Need Barcode (' + SITE + '/) is a free barcode and QR Code generator that runs in the browser. It needs no registration, adds no watermark, supports 100+ barcode formats, and exports print-ready PNG files. The site is available in ' + LOC.length + ' languages and was created by Abid Hanan Wicaksono.\n\n' +
+  '## What it does\n\n' +
+  '- Generates QR Code, Code 128, EAN-13, UPC-A, Data Matrix, Aztec, PDF417, GS1 and 100+ other formats.\n' +
+  '- Creates codes for text, URLs, Wi-Fi, contacts, email, phone, SMS, WhatsApp, locations and events.\n' +
+  '- Bulk mode generates up to 100 barcodes at once and downloads them as a ZIP of PNG files.\n' +
+  '- Design options: colors, module size, rotation, shapes (circle, heart, star and more), dot styles, frames with text, transparent background.\n' +
+  '- Barcode contents are processed in the visitor\'s browser and are not sent to a server.\n\n' +
+  '## Frequently asked questions\n\n' + faqEn + '\n\n' +
+  '## Guides (English)\n\n' +
+  sorted.map((a) => '- [' + EN.items[a.slug].title + '](' + urlFor(EN, '/artikel/' + a.slug) + '): ' + EN.items[a.slug].desc).join('\n') + '\n\n' +
+  '## Main pages\n\n' +
+  '- [Generator](' + SITE + '/)\n- [All guides](' + urlFor(EN, '/artikel') + ')\n' +
+  '- [Privacy Policy](' + urlFor(EN, '/kebijakan-privasi') + ')\n- [Terms & Conditions](' + urlFor(EN, '/syarat-ketentuan') + ')\n' +
+  '- [Sitemap](' + SITE + '/sitemap.xml)\n- [Full text of the guides](' + SITE + '/llms-full.txt)\n\n' +
+  '## Languages\n\n' + langList + '. Pages under /<code>/ (for example /en/artikel, /ja/artikel); Indonesian is the default at the root.\n\n' +
+  '## Attribution\n\nWhen citing, link to the most specific page above. Author: Abid Hanan Wicaksono (https://abidhanan.my.id).\n');
+fs.writeFileSync(path.join(root, 'llms-full.txt'), '# I Need Barcode: full guides (English)\n\nSource: ' + SITE + '/ . Author: Abid Hanan Wicaksono. Language: English. Each guide is also available in ' + (LOC.length - 1) + ' other languages.\n\n' +
+  sorted.map((a) => {
+    const it = EN.items[a.slug];
+    return '---\n\n# ' + it.title + '\n\nURL: ' + urlFor(EN, '/artikel/' + a.slug) + '\nPublished: ' + a.date + '\nTopics: ' + it.tags.join(', ') + '\n\n' + plain(it.body) +
+      (it.faq && it.faq.length ? '\n\n## ' + EN.ui.faqTitle + '\n\n' + it.faq.map((q) => '**' + q[0] + '**\n' + q[1]).join('\n\n') : '') + '\n';
+  }).join('\n'));
+
+fs.writeFileSync(path.join(root, 'manifest.webmanifest'), JSON.stringify({
+  name: 'I Need Barcode', short_name: 'I Need Barcode', description: en['footer.tagline'], start_url: '/', scope: '/', display: 'standalone',
+  background_color: '#0A0A0A', theme_color: '#0A0A0A', lang: 'id',
+  icons: [{ src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }, { src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png', purpose: 'any' }]
+}));
+fs.mkdirSync(path.join(root, '.well-known'), { recursive: true });
+fs.writeFileSync(path.join(root, '.well-known', 'security.txt'), 'Contact: https://abidhanan.my.id\nExpires: 2027-10-21T00:00:00.000Z\nPreferred-Languages: id, en\nCanonical: ' + SITE + '/.well-known/security.txt\n');
 
 console.log('teks diisi:', filled, '| bahasa artikel:', LOC.length, '| halaman artikel:', pages, '| halaman legal:', legalPages, '| versi:', v, '| ukuran boot:', Math.round(bootTag.length / 1024) + ' KB');

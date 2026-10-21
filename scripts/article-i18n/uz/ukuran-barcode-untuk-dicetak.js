@@ -14,7 +14,7 @@ module.exports = {
 <p>Ekranda yaxshi koʻringan shtrix-kod chop etilgandan keyin har doim ham oʻqilavermaydi. Juda kichik oʻlcham, past ruxsat yoki yoyilib ketgan siyoh skanerning oʻqiy olmasligiga sabab boʻlishi mumkin. Quyida chop etilgan nusxangiz oʻqiladigan boʻlib qolishi uchun qoʻllanma keltirilgan.</p>
 
 <h2>Modul bilan tanishing</h2>
-<p><strong>Modul</strong> — shtrix-kodning eng kichik birligi, yaʼni QR Code dagi bitta kichik katakcha yoki chiziqli shtrix-koddagi eng ingichka chiziq. Modul oʻlchami shtrix-kod qanchalik oson oʻqilishini belgilaydi. <a href="/">I Need Barcode</a> saytida modul oʻlchamini Sozlamalar boʻlimida oʻzgartirish mumkin: qiymat qancha katta boʻlsa, yuklab olinadigan tasvir shuncha katta va tiniq boʻladi.</p>
+<p><strong>Modul</strong> - shtrix-kodning eng kichik birligi, yaʼni QR Code dagi bitta kichik katakcha yoki chiziqli shtrix-koddagi eng ingichka chiziq. Modul oʻlchami shtrix-kod qanchalik oson oʻqilishini belgilaydi. <a href="/">I Need Barcode</a> saytida modul oʻlchamini Sozlamalar boʻlimida oʻzgartirish mumkin: qiymat qancha katta boʻlsa, yuklab olinadigan tasvir shuncha katta va tiniq boʻladi.</p>
 
 <h2>QR Code ning minimal oʻlchami</h2>
 <ul>

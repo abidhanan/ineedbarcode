@@ -11,7 +11,7 @@ module.exports = {
     ["QR Code bir qismi shikastlansa ham oʻqiladimi?", "Ha. Xatolarni tuzatish funksiyasi tufayli QR Code taxminan 7% dan 30% gacha qismi shikastlangan boʻlsa ham oʻqiladi. Bu qoʻllanilgan L, M, Q yoki H tuzatish darajasiga bogʻliq."]
   ],
   body: `
-<p>QR Code (Quick Response Code — tezkor javob kodi) — mayda qora va oq katakchalardan tashkil topgan kvadrat shaklidagi 2D shtrix-kod. Faqat oʻnlab raqamlarni saqlaydigan chiziqli shtrix-koddan farqli oʻlaroq, QR Code sayt havolasi, uzun matn, telefon raqami, kontakt va hatto WiFi tarmogʻi maʼlumotlarini saqlay oladi.</p>
+<p>QR Code (Quick Response Code - tezkor javob kodi) - mayda qora va oq katakchalardan tashkil topgan kvadrat shaklidagi 2D shtrix-kod. Faqat oʻnlab raqamlarni saqlaydigan chiziqli shtrix-koddan farqli oʻlaroq, QR Code sayt havolasi, uzun matn, telefon raqami, kontakt va hatto WiFi tarmogʻi maʼlumotlarini saqlay oladi.</p>
 <p>QR Code 1994-yilda yaponiyalik Denso Wave kompaniyasi tomonidan zavoddagi avtomobil ehtiyot qismlarini kuzatish uchun ishlab chiqilgan. Bugungi kunda QR Code raqamli toʻlovlardan tortib restoran menyularigacha hamma joyda qoʻllaniladi, chunki uni telefon kamerasi bilan toʻgʻridan-toʻgʻri skanerlash mumkin.</p>
 
 <h2>QR Code qismlari</h2>
@@ -38,7 +38,7 @@ module.exports = {
 <h2>QR Code ga nimalarni saqlash mumkin?</h2>
 <ul>
   <li>Sayt, onlayn doʻkon yoki shakl havolasi.</li>
-  <li>WiFi maʼlumotlari — mehmonlar parolni termasdan ulanishlari mumkin. <a href="/artikel/cara-membuat-qr-code-wifi">WiFi uchun QR Code</a> qoʻllanmasini koʻring.</li>
+  <li>WiFi maʼlumotlari - mehmonlar parolni termasdan ulanishlari mumkin. <a href="/artikel/cara-membuat-qr-code-wifi">WiFi uchun QR Code</a> qoʻllanmasini koʻring.</li>
   <li>Raqamli tashrif qogʻozi (vCard), elektron pochta, SMS va WhatsApp chati.</li>
   <li>Xaritadagi joylashuv va tadbir jadvali.</li>
 </ul>

@@ -20,9 +20,9 @@ module.exports = {
 <p>Ehtiyojingizga mos maʼlumot turini tanlang:</p>
 <ul>
   <li><strong>URL</strong>: sayt, onlayn doʻkon, Google Maps yoki shakl havolasi.</li>
-  <li><strong>WiFi</strong>: tarmoq nomi va parol — mehmonlar hech narsa termasdan ulanishlari uchun.</li>
+  <li><strong>WiFi</strong>: tarmoq nomi va parol - mehmonlar hech narsa termasdan ulanishlari uchun.</li>
   <li><strong>Kontakt</strong>: raqamli tashrif qogʻozi formatidagi ism, telefon raqami, elektron pochta va kompaniya.</li>
-  <li><strong>WhatsApp</strong>: raqam va dastlabki xabar — mijozlar siz bilan darhol chat ochishlari uchun.</li>
+  <li><strong>WhatsApp</strong>: raqam va dastlabki xabar - mijozlar siz bilan darhol chat ochishlari uchun.</li>
   <li>Boshqa ehtiyojlar uchun <strong>Matn, Elektron pochta, Telefon, SMS, Joylashuv, Tadbir</strong>.</li>
 </ul>
 <p>Har safar biror narsa terganingizda oldindan koʻrish darhol yangilanadi, shuning uchun natijani yuklab olishdan oldin tekshirishingiz mumkin.</p>

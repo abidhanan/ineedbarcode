@@ -14,7 +14,7 @@ module.exports = {
 <p>Shtrix-kod yaratayotganda odatda tugʻiladigan birinchi savol: chiziqli shtrix-koddan foydalanish kerakmi yoki QR Code danmi? Ikkalasi ham shtrix-kod deb ataladi, biroq ular maʼlumotni turlicha saqlaydi, shuning uchun vazifalari ham farq qiladi.</p>
 
 <h2>1D (chiziqli) shtrix-kod</h2>
-<p>1D shtrix-kod — vertikal chiziqlardan iborat shtrix-kod. Maʼlumot bir yoʻnalishda, yaʼni chapdan oʻngga saqlanadi. Eng mashhur misollar — mahsulot qadogʻidagi <a href="/?type=ean13">EAN-13</a> va joʻnatma yorliqlaridagi <a href="/?type=code128">Code 128</a>.</p>
+<p>1D shtrix-kod - vertikal chiziqlardan iborat shtrix-kod. Maʼlumot bir yoʻnalishda, yaʼni chapdan oʻngga saqlanadi. Eng mashhur misollar - mahsulot qadogʻidagi <a href="/?type=ean13">EAN-13</a> va joʻnatma yorliqlaridagi <a href="/?type=code128">Code 128</a>.</p>
 <ul>
   <li>Sigʻimi kichik, odatda oʻndan bir necha oʻngacha belgi.</li>
   <li>Arzon va juda tez ishlaydigan kassa lazer skanerlari bilan oʻqiladi.</li>
@@ -22,9 +22,9 @@ module.exports = {
 </ul>
 
 <h2>2D shtrix-kod</h2>
-<p>2D shtrix-kod maʼlumotni ikki yoʻnalishda — gorizontal va vertikal saqlaydi, shuning uchun unga ancha koʻp maʼlumot sigʻadi. Masalan, <a href="/?type=qrcode">QR Code</a>, <a href="/?type=datamatrix">Data Matrix</a>, <a href="/?type=pdf417">PDF417</a> va <a href="/?type=azteccode">Aztec</a>.</p>
+<p>2D shtrix-kod maʼlumotni ikki yoʻnalishda - gorizontal va vertikal saqlaydi, shuning uchun unga ancha koʻp maʼlumot sigʻadi. Masalan, <a href="/?type=qrcode">QR Code</a>, <a href="/?type=datamatrix">Data Matrix</a>, <a href="/?type=pdf417">PDF417</a> va <a href="/?type=azteccode">Aztec</a>.</p>
 <ul>
-  <li>Sigʻimi katta — oʻnlab belgidan minglab belgigacha.</li>
+  <li>Sigʻimi katta - oʻnlab belgidan minglab belgigacha.</li>
   <li>Telefon kamerasi bilan turli yoʻnalishlardan skanerlash mumkin.</li>
   <li>Xatolarni tuzatish funksiyasi bor, shuning uchun bir qismi shikastlangan boʻlsa ham oʻqiladi.</li>
   <li>Juda kichik qilib yaratish mumkin, masalan, elektron komponentlardagi Data Matrix.</li>

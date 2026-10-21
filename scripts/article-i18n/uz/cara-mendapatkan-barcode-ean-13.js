@@ -8,7 +8,7 @@ module.exports = {
   faq: [
     ["EAN-13 raqamini oʻzim yaratsam boʻladimi?", "Shtrix-kod tasvirini oʻzingiz yaratishingiz mumkin, ammo raqam GS1 tomonidan rasmiy berilgani maʼqul. Oʻzingiz oʻylab topgan raqam boshqa mahsulot raqami bilan toʻqnashishi va chakana savdo doʻkonlari tomonidan rad etilishi mumkin."],
     ["Har bir mahsulot varianti uchun alohida shtrix-kod kerakmi?", "Ha. Har bir alohida variant, masalan, taʼmi, oʻlchami yoki qadoqdagi miqdori farq qiladigan mahsulot uchun oʻz EAN-13 raqami kerak."],
-    ["EAN-13 dagi nazorat raqami nima?", "Nazorat raqami — oldingi 12 ta raqamdan hisoblab chiqiladigan 13-raqam. Skaner undan shtrix-kod toʻgʻri oʻqilganiga ishonch hosil qilish uchun foydalanadi. Agar siz 12 ta raqam kiritsangiz, I Need Barcode generatori uni avtomatik hisoblaydi."]
+    ["EAN-13 dagi nazorat raqami nima?", "Nazorat raqami - oldingi 12 ta raqamdan hisoblab chiqiladigan 13-raqam. Skaner undan shtrix-kod toʻgʻri oʻqilganiga ishonch hosil qilish uchun foydalanadi. Agar siz 12 ta raqam kiritsangiz, I Need Barcode generatori uni avtomatik hisoblaydi."]
   ],
   body: `
 <p>Agar mahsulotingizni minimarket, supermarket yoki yirik marketpleyslarda sotmoqchi boʻlsangiz, odatda qadoqqa <strong>EAN-13</strong> shtrix-kodini joylashtirish talab qilinadi. Bu shtrix-kod mahsulotingizning butun dunyo boʻylab noyob identifikatori boʻlib xizmat qiladigan 13 ta raqamdan iborat.</p>
@@ -26,7 +26,7 @@ module.exports = {
 
 <h2>GS1 Indonesia orqali raqamni roʻyxatdan oʻtkazish tartibi</h2>
 <ol>
-  <li>NIB (Nomor Induk Berusaha — tadbirkorlik identifikatsiya raqami) va NPWP (soliq toʻlovchi raqami) kabi biznes hujjatlarini hamda shtrix-kod beriladigan mahsulotlar roʻyxatini tayyorlang.</li>
+  <li>NIB (Nomor Induk Berusaha - tadbirkorlik identifikatsiya raqami) va NPWP (soliq toʻlovchi raqami) kabi biznes hujjatlarini hamda shtrix-kod beriladigan mahsulotlar roʻyxatini tayyorlang.</li>
   <li>Kompaniyani GS1 Indonesia rasmiy sayti orqali roʻyxatdan oʻtkazing va kerakli raqamlar sonini tanlang.</li>
   <li>Amaldagi qoidalarga muvofiq roʻyxatdan oʻtish toʻlovi va yillik badalni toʻlang.</li>
   <li>Tasdiqlangandan soʻng siz kompaniya raqamini olasiz va har bir mahsulot uchun raqam yaratishingiz mumkin.</li>

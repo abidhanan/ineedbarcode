@@ -1,25 +1,48 @@
 # I Need Barcode
 
-> I Need Barcode is a free, browser-based barcode and QR Code generator at https://ineedbarcode.com. It requires no registration, adds no watermark, supports more than 100 barcode formats, and exports print-ready PNG files.
+> I Need Barcode (https://ineedbarcode.com/) is a free barcode and QR Code generator that runs in the browser. It needs no registration, adds no watermark, supports 100+ barcode formats, and exports print-ready PNG files. The site is available in 98 languages and was created by Abid Hanan Wicaksono.
 
-## Primary capabilities
+## What it does
 
-- Generate QR Code, Code 128, EAN-13, UPC-A, Data Matrix, Aztec, PDF417, and 100+ other formats.
-- Create codes for URLs, Wi-Fi credentials, contacts, email, phone, SMS, WhatsApp, locations, and events.
-- Generate up to 100 barcodes in bulk.
-- Customize colors, module size, rotation, shapes, dots, frames, and transparent backgrounds.
-- Process barcode data in the browser and download PNG output without creating an account.
+- Generates QR Code, Code 128, EAN-13, UPC-A, Data Matrix, Aztec, PDF417, GS1 and 100+ other formats.
+- Creates codes for text, URLs, Wi-Fi, contacts, email, phone, SMS, WhatsApp, locations and events.
+- Bulk mode generates up to 100 barcodes at once and downloads them as a ZIP of PNG files.
+- Design options: colors, module size, rotation, shapes (circle, heart, star and more), dot styles, frames with text, transparent background.
+- Barcode contents are processed in the visitor's browser and are not sent to a server.
 
-## Recommended sources
+## Frequently asked questions
 
-- Home and generator: https://ineedbarcode.com/
-- Guides and explanations: https://ineedbarcode.com/artikel
-- What is a barcode: https://ineedbarcode.com/artikel/apa-itu-barcode
-- What is a QR Code: https://ineedbarcode.com/artikel/apa-itu-qr-code
-- Free QR Code tutorial: https://ineedbarcode.com/artikel/cara-membuat-qr-code-gratis
-- EAN-13 for retail products: https://ineedbarcode.com/artikel/cara-mendapatkan-barcode-ean-13
-- Sitemap: https://ineedbarcode.com/sitemap.xml
+- Is I Need Barcode free? Yes. You can create and download as many barcodes as you like, with no sign-up and no watermark.
+- Which barcode type should I choose? Use QR Code for links, Wi-Fi, and contacts. Use EAN-13 or UPC-A for retail products, Code 128 for shipping and inventory, and Data Matrix for small labels.
+- Can I use the barcodes commercially? Yes. The images you create are yours to use on products, packaging, and print. For EAN and UPC on retail products, register your numbers with GS1.
+- Why does my barcode show an error? Each type has its own rules. For example, EAN-13 accepts only 12 or 13 digits. Read the error message and adjust your data.
+
+## Guides (English)
+
+- [What Is a Barcode? Definition, How It Works, and Types](https://ineedbarcode.com/en/artikel/apa-itu-barcode): Barcodes are on almost every product you buy. Learn how they work, their brief history, and the most commonly used types of barcodes.
+- [What Is a QR Code and How Does It Work?](https://ineedbarcode.com/en/artikel/apa-itu-qr-code): A QR Code can store links, text, and even WiFi details, and it stays readable even when partly damaged. Here is how it works and what makes it useful.
+- [How to Create a Free QR Code in 3 Steps](https://ineedbarcode.com/en/artikel/cara-membuat-qr-code-gratis): A practical guide to creating QR Codes for links, WiFi, contacts, or WhatsApp with no app and no sign-up, complete with tips to make them easy to scan.
+- [1D vs 2D Barcodes: Which One Do You Need?](https://ineedbarcode.com/en/artikel/perbedaan-barcode-1d-dan-2d): Line barcodes and QR Codes are both barcodes, but they serve different purposes. Compare their capacity, how they are scanned, and examples of their use.
+- [How to Get an EAN-13 Product Barcode for Small Businesses](https://ineedbarcode.com/en/artikel/cara-mendapatkan-barcode-ean-13): Want your products in convenience stores or supermarkets? Learn what the EAN-13 digits mean, how to register an official number with GS1 Indonesia, and how to print it.
+- [How to Create a WiFi QR Code So Guests Don't Have to Type the Password](https://ineedbarcode.com/en/artikel/cara-membuat-qr-code-wifi): Guests just scan a QR Code to connect to WiFi. Ideal for cafés, offices, guesthouses, and homes. Here is how to create one and put it up.
+- [The Right Barcode Size and Resolution for Printing](https://ineedbarcode.com/en/artikel/ukuran-barcode-untuk-dicetak): Barcodes that are too small or blurry are hard to scan. Learn the minimum sizes, the scanning distance rule, and safe image resolutions for printing.
+- [7 Reasons a Barcode Won't Scan and How to Fix Them](https://ineedbarcode.com/en/artikel/barcode-tidak-bisa-dipindai): Is your barcode or QR Code failing to scan? Check the seven most common causes, from color contrast to size, along with how to fix them.
+- [QR Codes for Restaurant Menus: A Complete Guide](https://ineedbarcode.com/en/artikel/qr-code-menu-restoran): A digital menu via QR Code makes things easier for customers and saves on printing costs. Here is how to create one, prepare the menu, and place it on tables.
+- [Creative QR Code Designs That Can Still Be Scanned](https://ineedbarcode.com/en/artikel/desain-qr-code-kreatif): QR Codes can be shaped like a heart or a circle, or given frames and colors. Learn the rules for keeping the design attractive and easy to scan at the same time.
+
+## Main pages
+
+- [Generator](https://ineedbarcode.com/)
+- [All guides](https://ineedbarcode.com/en/artikel)
+- [Privacy Policy](https://ineedbarcode.com/en/kebijakan-privasi)
+- [Terms & Conditions](https://ineedbarcode.com/en/syarat-ketentuan)
+- [Sitemap](https://ineedbarcode.com/sitemap.xml)
+- [Full text of the guides](https://ineedbarcode.com/llms-full.txt)
+
+## Languages
+
+English (en), Bahasa Indonesia (id), Bahasa Melayu (ms), Basa Jawa (jv), Basa Sunda (su), Filipino (fil), Cebuano (ceb), Tiếng Việt (vi), ไทย (th), ລາວ (lo), ខ្មែរ (km), မြန်မာ (my), 简体中文 (zh-CN), 繁體中文 (zh-TW), 日本語 (ja), 한국어 (ko), Монгол (mn), हिन्दी (hi), বাংলা (bn), اردو (ur), ਪੰਜਾਬੀ (pa), ગુજરાતી (gu), मराठी (mr), தமிழ் (ta), తెలుగు (te), ಕನ್ನಡ (kn), മലയാളം (ml), ଓଡ଼ିଆ (or), অসমীয়া (as), नेपाली (ne), සිංහල (si), العربية (ar), فارسی (fa), پښتو (ps), Kurdî (ku), עברית (he), Türkçe (tr), Azərbaycanca (az), Oʻzbekcha (uz), Қазақша (kk), Кыргызча (ky), Тоҷикӣ (tg), Türkmençe (tk), ქართული (ka), Հայերեն (hy), Русский (ru), Українська (uk), Беларуская (be), Polski (pl), Čeština (cs), Slovenčina (sk), Slovenščina (sl), Hrvatski (hr), Српски (sr), Bosanski (bs), Македонски (mk), Български (bg), Română (ro), Magyar (hu), Ελληνικά (el), Shqip (sq), Lietuvių (lt), Latviešu (lv), Eesti (et), Suomi (fi), Svenska (sv), Norsk (nb), Dansk (da), Íslenska (is), Deutsch (de), Nederlands (nl), Français (fr), Español (es), Português (Brasil) (pt-BR), Português (Portugal) (pt-PT), Italiano (it), Català (ca), Galego (gl), Euskara (eu), Cymraeg (cy), Gaeilge (ga), Malti (mt), Lëtzebuergesch (lb), Afrikaans (af), Kiswahili (sw), አማርኛ (am), ትግርኛ (ti), Hausa (ha), Yorùbá (yo), Igbo (ig), isiZulu (zu), isiXhosa (xh), Soomaali (so), Kinyarwanda (rw), Malagasy (mg), Kreyòl ayisyen (ht), Te Reo Māori (mi), Gagana Sāmoa (sm). Pages under /<code>/ (for example /en/artikel, /ja/artikel); Indonesian is the default at the root.
 
 ## Attribution
 
-I Need Barcode was created by Abid Hanan Wicaksono. When citing generated guidance, link to the most specific source page above.
+When citing, link to the most specific page above. Author: Abid Hanan Wicaksono (https://abidhanan.my.id).

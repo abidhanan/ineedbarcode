@@ -11,7 +11,7 @@ module.exports = {
     ["WiFi paroli oʻzgartirilsa, nima qilish kerak?", "WiFi QR Code ni qaytadan yarating va chop eting, chunki eski QR Code da hali ham eski parol saqlangan."]
   ],
   body: `
-<p>Mehmonlarga uzun WiFi parolini harfma-harf aytib berish, ayniqsa unda katta harflar, raqamlar va belgilar boʻlsa, koʻpincha noqulay. <strong>WiFi QR Code</strong> yordamida mehmonlar telefon kamerasini QR Code ga qaratishi kifoya — ular darhol ulanadi.</p>
+<p>Mehmonlarga uzun WiFi parolini harfma-harf aytib berish, ayniqsa unda katta harflar, raqamlar va belgilar boʻlsa, koʻpincha noqulay. <strong>WiFi QR Code</strong> yordamida mehmonlar telefon kamerasini QR Code ga qaratishi kifoya - ular darhol ulanadi.</p>
 
 <h2>WiFi QR Code qanday ishlaydi</h2>
 <p>WiFi QR Code tarmoq nomi (SSID), xavfsizlik turi va parolni telefonlar taniydigan maxsus formatda saqlaydi, masalan, <code>WIFI:T:WPA;S:TarmoqNomi;P:Parol;;</code>. iPhone (iOS 11 va undan yuqori) hamda aksariyat Android qurilmalarining (Android 10 va undan yuqori) oʻrnatilgan kamerasi uni qoʻshimcha ilovasiz toʻgʻridan-toʻgʻri oʻqiy oladi.</p>
@@ -29,8 +29,8 @@ module.exports = {
 <ul>
   <li>Kafe yoki restoran stolidagi kichik kartochkaga.</li>
   <li>Mehmonxona zali, qabulxona yoki ofis majlislar xonasi devoriga.</li>
-  <li>Mehmonxona xonasiga — eshik yoki televizor yoniga yopishtirib.</li>
-  <li>Uydagi routerning pastki qismiga — oila aʼzolari yangi qurilmalarni oson ulashlari uchun.</li>
+  <li>Mehmonxona xonasiga - eshik yoki televizor yoniga yopishtirib.</li>
+  <li>Uydagi routerning pastki qismiga - oila aʼzolari yangi qurilmalarni oson ulashlari uchun.</li>
 </ul>
 
 <h2>Xavfsizlik boʻyicha maslahatlar</h2>

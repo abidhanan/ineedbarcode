@@ -9,7 +9,7 @@ module.exports = {
     title: "Maxfiylik siyosati",
     desc: "Shtrix-kod va QR Code yaratganingizda I Need Barcode qanday ma'lumotlarni qayta ishlaydi va biz ular bilan qanday munosabatda bo'lamiz.",
     body: `
-<p>I Need Barcode (ineedbarcode.com) — Abid Hanan Wicaksono tomonidan boshqariladigan bepul shtrix-kod va QR Code generatori. Ushbu siyosat veb-saytdan foydalanganingizda qanday ma'lumotlarni qayta ishlashimiz va ular bilan qanday munosabatda bo'lishimizni tushuntiradi. Biz ataylab imkon qadar kam ma'lumot yig'amiz: ushbu xizmatdan foydalanish uchun ro'yxatdan o'tishingiz, tizimga kirishingiz yoki ismingiz va elektron pochtangizni berishingiz shart emas.</p>
+<p>I Need Barcode (ineedbarcode.com) - Abid Hanan Wicaksono tomonidan boshqariladigan bepul shtrix-kod va QR Code generatori. Ushbu siyosat veb-saytdan foydalanganingizda qanday ma'lumotlarni qayta ishlashimiz va ular bilan qanday munosabatda bo'lishimizni tushuntiradi. Biz ataylab imkon qadar kam ma'lumot yig'amiz: ushbu xizmatdan foydalanish uchun ro'yxatdan o'tishingiz, tizimga kirishingiz yoki ismingiz va elektron pochtangizni berishingiz shart emas.</p>
 <h2>Biz qayta ishlaydigan ma'lumotlar</h2>
 <ul>
 <li><strong>Shtrix-kod mazmuni.</strong> Siz kiritadigan matn, havolalar, WiFi ma'lumotlari, kontaktlar va boshqa ma'lumotlar bevosita brauzeringizda qayta ishlanadi. Shtrix-kod tasvirlari qurilmangizda yaratiladi va serverlarimizga yuborilmaydi, jumladan, bir vaqtning o'zida ko'plab shtrix-kodlar yaratganingizda ham.</li>
@@ -56,7 +56,7 @@ module.exports = {
     body: `
 <p>I Need Barcode'dan (ineedbarcode.com) foydalanish orqali siz quyidagi shartlarga rozilik bildirasiz. Agar rozi bo'lmasangiz, iltimos, ushbu xizmatdan foydalanmang.</p>
 <h2>Xizmat haqida</h2>
-<p>I Need Barcode — shtrix-kod va QR Code tasvirlarini bevosita brauzerda yaratish uchun bepul vosita. I Need Barcode GS1 yoki boshqa biror shtrix-kod standarti egasi bilan bog'liq emas, ular tomonidan qo'llab-quvvatlanmaydi va ular bilan hamkorlik qilmaydi. QR Code — DENSO WAVE INCORPORATED kompaniyasining ro'yxatdan o'tgan savdo belgisi. Barcha savdo belgilari tegishli egalariga tegishli.</p>
+<p>I Need Barcode - shtrix-kod va QR Code tasvirlarini bevosita brauzerda yaratish uchun bepul vosita. I Need Barcode GS1 yoki boshqa biror shtrix-kod standarti egasi bilan bog'liq emas, ular tomonidan qo'llab-quvvatlanmaydi va ular bilan hamkorlik qilmaydi. QR Code - DENSO WAVE INCORPORATED kompaniyasining ro'yxatdan o'tgan savdo belgisi. Barcha savdo belgilari tegishli egalariga tegishli.</p>
 <h2>Ruxsat etilgan foydalanish</h2>
 <ul>
 <li>Siz yaratgan shtrix-kod tasvirlaridan shaxsiy va tijorat maqsadlarida, masalan, mahsulotlar, qadoqlar, yorliqlar va bosma materiallar uchun suv belgisisiz va bepul foydalanishingiz mumkin.</li>

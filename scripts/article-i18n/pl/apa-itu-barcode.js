@@ -18,7 +18,7 @@ module.exports = {
 <p>Pomysł kodu kreskowego opatentowali w 1952 roku Norman Joseph Woodland i Bernard Silver w Stanach Zjednoczonych. W sklepach kod kreskowy zaczęto naprawdę stosować dopiero w 1974 roku, gdy w jednym z supermarketów w Ohio zeskanowano opakowanie gumy do żucia z kodem UPC. Od tego czasu kody kreskowe rozpowszechniły się na całym świecie, a dziś globalnie zarządza nimi organizacja standaryzacyjna GS1.</p>
 
 <h2>Jak działa kod kreskowy?</h2>
-<p>Skaner oświetla kod kreskowy i odczytuje odbite światło. Ciemne obszary odbijają mało światła, jasne — dużo. Ta różnica jest zamieniana na ciąg zer i jedynek, który następnie porównuje się z regułami danego rodzaju kodu kreskowego. Wiele kodów kreskowych ma także <strong>cyfrę kontrolną</strong> (check digit), czyli ostatnią cyfrę obliczaną na podstawie poprzednich. Jeśli wynik obliczenia się nie zgadza, skaner wie, że wystąpił błąd, i odrzuca odczyt.</p>
+<p>Skaner oświetla kod kreskowy i odczytuje odbite światło. Ciemne obszary odbijają mało światła, jasne - dużo. Ta różnica jest zamieniana na ciąg zer i jedynek, który następnie porównuje się z regułami danego rodzaju kodu kreskowego. Wiele kodów kreskowych ma także <strong>cyfrę kontrolną</strong> (check digit), czyli ostatnią cyfrę obliczaną na podstawie poprzednich. Jeśli wynik obliczenia się nie zgadza, skaner wie, że wystąpił błąd, i odrzuca odczyt.</p>
 <p>Sam kod kreskowy zwykle przechowuje wyłącznie kod. Informacje takie jak nazwa produktu czy cena są przechowywane w systemie kasowym lub bazie danych i wyszukiwane na podstawie tego kodu.</p>
 
 <h2>Najczęściej używane rodzaje kodów kreskowych</h2>

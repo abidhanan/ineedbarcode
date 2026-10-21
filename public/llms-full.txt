@@ -1,0 +1,615 @@
+# I Need Barcode: full guides (English)
+
+Source: https://ineedbarcode.com/ . Author: Abid Hanan Wicaksono. Language: English. Each guide is also available in 97 other languages.
+
+---
+
+# What Is a Barcode? Definition, How It Works, and Types
+
+URL: https://ineedbarcode.com/en/artikel/apa-itu-barcode
+Published: 2026-10-18
+Topics: Basics, Barcode
+
+A barcode is a way of writing data as a pattern that machines can read. The pattern usually consists of black and white lines of different widths, or small squares arranged inside a square. When scanned, the pattern is translated back into numbers or text, such as a product code, a tracking number, or a website address.
+
+Because they are read by machines, barcodes are much faster and far less error-prone than typing codes by hand. That is why barcodes are used at checkouts, in warehouses, hospitals, and on tickets, all the way to food packaging.
+
+## A brief history of the barcode
+
+The idea of the barcode was patented in 1952 by Norman Joseph Woodland and Bernard Silver in the United States. Barcodes were only truly used in stores in 1974, when a pack of chewing gum was scanned with a UPC code at a supermarket in Ohio. Since then, barcodes have spread around the world and are now managed globally by a standards organization called GS1.
+
+## How does a barcode work?
+
+A scanner shines light on the barcode and then reads the reflection. Dark areas reflect little light, while light areas reflect a lot. That difference is converted into a sequence of 0s and 1s, which is then matched against the rules of that barcode type. Many barcodes also have a check digit, which is the last digit calculated from the digits before it. If the calculation does not match, the scanner knows something is wrong and rejects the result.
+
+The barcode itself usually stores only a code. Information such as the product name or price is stored in the checkout system or a database, and is looked up based on that code.
+
+## Commonly used types of barcodes
+
+In general, barcodes fall into two major groups:
+
+- 1D (linear) barcodes: vertical lines that are read from left to right. Examples include EAN-13 and UPC-A for retail products, as well as Code 128 and Code 39 for logistics and warehouses.
+
+- 2D barcodes: square patterns that store data in two directions, so they can hold much more. Examples include QR Code, Data Matrix, PDF417, and Aztec.
+
+There are also special barcodes for postal and shipping services, healthcare, and GS1 standards for supply chains. You can read a more detailed explanation of the differences in the article The Difference Between 1D and 2D Barcodes.
+
+## What are barcodes used for?
+
+- Retail: speeding up checkout and recording stock automatically.
+
+- Warehousing and shipping: tracking goods and parcels from one place to another.
+
+- Tickets and events: verifying that tickets are genuine with a single scan.
+
+- Marketing: a QR Code on a brochure or package takes people straight to your website, menu, or WhatsApp.
+
+## Creating your own barcode
+
+You do not need a paid app to create a barcode. At I Need Barcode, choose a barcode type, enter your data, and download it as a PNG image. There are more than 100 types to choose from, and all of them are free with no sign-up.
+
+## Frequently Asked Questions
+
+**What is the difference between a barcode and a QR Code?**
+A QR Code is one type of barcode, namely a 2D barcode. Line (1D) barcodes store only a few characters and are read from left to right, while a QR Code stores data in two directions, so it can hold a link, text, or WiFi details.
+
+**Does a barcode store the product's price?**
+Usually not. A product barcode contains only a code. The product's price and name are stored in the checkout system and looked up based on the scanned code.
+
+**Do I have to pay to create a barcode?**
+No. Barcode images can be created for free, for example at I Need Barcode. The only thing that requires paid registration is an official number for retail product barcodes such as EAN-13, through GS1.
+
+---
+
+# What Is a QR Code and How Does It Work?
+
+URL: https://ineedbarcode.com/en/artikel/apa-itu-qr-code
+Published: 2026-10-17
+Topics: Basics, QR Code
+
+A QR Code (Quick Response Code) is a square 2D barcode made up of small black and white squares. Unlike line barcodes, which store only a dozen or so digits, a QR Code can store website links, long text, phone numbers, contacts, and even WiFi network details.
+
+The QR Code was developed in 1994 by Denso Wave, a Japanese company, to track vehicle parts in factories. Today QR Codes are used everywhere, from digital payments to restaurant menus, because they can be scanned directly with a phone camera.
+
+## Parts of a QR Code
+
+- Three large squares in the corners (finder patterns): help the camera locate the QR Code and determine its orientation, so the QR Code can still be read when scanned at an angle or upside down.
+
+- Alignment pattern: a small square that helps read QR Codes that are bent or viewed from an angle.
+
+- Data area: the small squares that contain the information you store.
+
+- Quiet zone: the empty space around the QR Code that makes it easy to separate from the background.
+
+## How much data can it store?
+
+QR Codes come in 40 size versions. The largest version can store up to 7,089 digits or about 2,953 bytes of data. In practice, the less data you store, the larger the squares and the easier the QR Code is to scan. That is why a short link is better than a very long one.
+
+## Still readable when damaged
+
+QR Codes use error correction. There are four levels:
+
+- L: data can still be recovered if about 7% of the QR Code is damaged.
+
+- M: about 15%. This is the common, balanced choice.
+
+- Q: about 25%.
+
+- H: about 30%, suitable for QR Codes that will have a logo added or be printed in places that get dirty easily.
+
+The higher the correction level, the more squares are needed, so the QR Code pattern looks denser.
+
+## What can you store in a QR Code?
+
+- Links to websites, online stores, or forms.
+
+- WiFi details, so guests can connect without typing a password. See the WiFi QR Code guide.
+
+- Digital business cards (vCard), email, SMS, and WhatsApp chats.
+
+- Map locations and event schedules.
+
+## Static and dynamic QR Codes
+
+A QR Code created directly from data is called a static QR Code: its content is embedded in the image and cannot be changed, but it also never expires. A dynamic QR Code contains a short link owned by a service, which then redirects to your destination; the destination can be changed, but the QR Code will stop working if that service shuts down. For most needs, a static QR Code is enough and safer in the long run.
+
+Want to try it? Create a free QR Code now, or read how to create a QR Code in 3 steps.
+
+## Frequently Asked Questions
+
+**Can a QR Code expire?**
+A static QR Code never expires because its data is embedded directly in the image. A dynamic QR Code can stop working if the service providing its link shuts down or the subscription ends.
+
+**How much data can a QR Code store?**
+The largest QR Code version can store up to 7,089 digits or about 2,953 bytes. However, the less data it holds, the easier the QR Code is to scan.
+
+**Can a QR Code still be read if it is partly damaged?**
+Yes. Thanks to error correction, a QR Code stays readable even when about 7% to 30% of it is damaged, depending on the correction level used: L, M, Q, or H.
+
+---
+
+# How to Create a Free QR Code in 3 Steps
+
+URL: https://ineedbarcode.com/en/artikel/cara-membuat-qr-code-gratis
+Published: 2026-10-16
+Topics: Guide, QR Code
+
+Creating a QR Code no longer requires a special app or a subscription fee. With an online generator like I Need Barcode, you can create a QR Code in seconds right from your browser, on either a phone or a laptop.
+
+## Step 1: Choose the barcode type
+
+Open the QR Code generator, then select QR Code in the Barcode type section. A QR Code is the best choice if the barcode will be scanned with a phone camera.
+
+## Step 2: Enter the data
+
+Choose the type of data you need:
+
+- URL: a link to a website, online store, Google Maps, or a form.
+
+- WiFi: the network name and password, so guests can connect without typing.
+
+- Contact: name, phone number, email, and company in a digital business card format.
+
+- WhatsApp: a number and an opening message, so customers go straight to a chat with you.
+
+- Text, Email, Phone, SMS, Location, Event for other needs.
+
+The preview updates instantly every time you type, so you can check the result before downloading.
+
+## Step 3: Adjust the look and download
+
+In the Settings section, adjust the module size (the larger it is, the sharper it prints), the colors, and the margin. In the Design section, you can give it a shape such as a circle or a heart, a dot style, and a frame with text such as "SCAN ME". When you are done, press Download PNG.
+
+## Tips to make your QR Code easy to scan
+
+- Test before printing. Scan it with two or three different phones from a reasonable distance.
+
+- Use strong contrast. A dark color on a light background is the safest. Avoid light QR Codes on a dark background.
+
+- Do not make it too small. For scanning up close, about 2 × 2 cm is the safe minimum. The farther the scanning distance, the larger it should be. Also read barcode sizes for printing.
+
+- Leave empty space around the QR Code so it does not touch other images or text.
+
+- Use a short link. Less data produces a less dense pattern that is easier to read.
+
+## Need many QR Codes at once?
+
+Turn on Bulk mode, write one piece of data per line (up to 100 lines), then download them all in a single ZIP file. This works well for inventory labels, participant cards, or event tickets.
+
+## Frequently Asked Questions
+
+**Can a QR Code created for free be used for business?**
+Yes. The static QR Codes you create are free to use on packaging, brochures, menus, or promotional materials, with no watermark and no license fee.
+
+**Can the content of a QR Code be changed after it is printed?**
+A static QR Code cannot be changed after it is printed. If its content is likely to change, point the QR Code to a page whose content you can update yourself, such as a page on your website.
+
+**What image format is best for printing a QR Code?**
+PNG, because the edges of the squares stay sharp. Download it with a large enough module size, then scale it down in your design app if needed, not the other way around.
+
+---
+
+# 1D vs 2D Barcodes: Which One Do You Need?
+
+URL: https://ineedbarcode.com/en/artikel/perbedaan-barcode-1d-dan-2d
+Published: 2026-10-15
+Topics: Basics, Barcode
+
+When creating a barcode, the first question that usually comes up is: should I use a line barcode or a QR Code? Both are called barcodes, but they store data differently, so their uses differ too.
+
+## 1D (linear) barcodes
+
+A 1D barcode is a barcode made of vertical lines. Data is stored in one direction, from left to right. The best-known examples are EAN-13 on product packaging and Code 128 on shipping labels.
+
+- Small capacity, usually a dozen to a few dozen characters.
+
+- Can be read by inexpensive, very fast checkout laser scanners.
+
+- Suitable for product codes, serial numbers, and tracking numbers.
+
+## 2D barcodes
+
+A 2D barcode stores data in two directions, horizontally and vertically, so it can hold much more. Examples include QR Code, Data Matrix, PDF417, and Aztec.
+
+- Large capacity, from dozens to thousands of characters.
+
+- Can be scanned by a phone camera from various directions.
+
+- Has error correction, so it remains readable even when partly damaged.
+
+- Can be made very small, for example Data Matrix on electronic components.
+
+## Quick comparison
+
+   | 1D Barcode | 2D Barcode |
+
+    Shape | Vertical lines | Squares/dots within a square |
+
+    Capacity | Small | Large |
+
+    Scanning device | Laser scanner or camera | Camera or 2D scanner |
+
+    Damage resistance | Limited | Has error correction |
+
+    Examples | EAN-13, UPC-A, Code 128 | QR Code, Data Matrix, PDF417 |
+
+## When to use which?
+
+- Products sold in stores or convenience stores: use an official EAN-13 from GS1. See how to get an EAN-13 barcode.
+
+- Warehouse, shelf, or shipping labels: Code 128 is a common choice because it is compact and supports both letters and numbers.
+
+- Links, menus, WiFi, or contacts for customers: QR Code, because it can be scanned directly with a phone camera.
+
+- Very small labels: Data Matrix.
+
+- ID cards, boarding passes, or documents: PDF417 or Aztec.
+
+You can create all of the types above for free at I Need Barcode. If you are still unsure, start with a QR Code for customer-facing needs and Code 128 for internal needs.
+
+## Frequently Asked Questions
+
+**Can a checkout scanner read QR Codes?**
+Not all of them. 1D laser scanners only read line barcodes. QR Codes require a camera-based 2D scanner or a phone camera.
+
+**Which barcode is the smallest?**
+Data Matrix is a 2D barcode that can be printed very small, so it is often used on electronic components, medical devices, and medicine labels.
+
+**Can I use a QR Code instead of EAN-13 on retail products?**
+To be sold in retail stores, products still need a registered EAN-13 or UPC. A QR Code can be added to the packaging as a complement, for example for product information or promotions.
+
+---
+
+# How to Get an EAN-13 Product Barcode for Small Businesses
+
+URL: https://ineedbarcode.com/en/artikel/cara-mendapatkan-barcode-ean-13
+Published: 2026-10-14
+Topics: Business, Retail
+
+If you want your products sold in convenience stores, supermarkets, or large marketplaces, you will usually be asked to put an EAN-13 barcode on the packaging. This barcode contains 13 digits that serve as your product's unique identity worldwide.
+
+## What the 13 digits of EAN-13 mean
+
+- GS1 prefix: the first three digits indicate the GS1 organization that issued the number. Numbers issued by GS1 Indonesia start with 899.
+
+- Company number: your company's identity, assigned when you register.
+
+- Product number: set by the company itself for each product variant, for example a different flavor or size.
+
+- Check digit: the last digit, calculated automatically from the previous 12 digits to prevent misreading.
+
+## Why do you need an official number?
+
+Anyone can draw an EAN-13 barcode, but the number must be registered. Retail stores use that number to recognize products in their systems. If you make up your own number, it may clash with another company's product and be rejected when the product is registered with the store.
+
+## How to register a number with GS1 Indonesia
+
+- Prepare your business documents, such as an NIB (Business Identification Number) and NPWP (Taxpayer Identification Number), along with a list of the products that will be given barcodes.
+
+- Register your company through the official GS1 Indonesia website and choose the quantity of numbers you need.
+
+- Pay the registration fee and annual dues according to the applicable regulations.
+
+- Once approved, you will receive a company number and can create a number for each product.
+
+Requirements and fees may change, so always check the latest information directly on the GS1 Indonesia website.
+
+## Creating the barcode image
+
+Once you have your number, open the EAN-13 generator and enter your product's 12- or 13-digit number. If you enter 12 digits, the check digit will be calculated automatically. Make sure the option to show text below the barcode is turned on so the digits are printed, then download it as a PNG.
+
+## Tips for printing on packaging
+
+- Use black or dark blue lines on a white background. Avoid red for the lines, because many checkout scanners use red light, so red lines cannot be read.
+
+- Do not shrink the barcode too much. The standard EAN-13 size is about 37.3 × 25.9 mm and it may be reduced to about 80%. More details in the barcode size guide.
+
+- Leave empty space to the left and right of the barcode, and avoid placing it on folds or seams of the packaging.
+
+- Test a print with a scanner before printing in large quantities.
+
+For products sold in North America, you may also be asked to use UPC-A, which contains 12 digits.
+
+## Frequently Asked Questions
+
+**Can I make up my own EAN-13 number?**
+You can create the barcode image yourself, but the number should be an official one from GS1. A self-made number can clash with other products and be rejected by retail stores.
+
+**Does every product variant need a different barcode?**
+Yes. Every distinct variant, for example a different flavor, size, or pack quantity, needs its own EAN-13 number.
+
+**What is the check digit in EAN-13?**
+The check digit is the 13th digit, calculated from the 12 digits before it. Scanners use it to make sure the barcode has been read correctly. The I Need Barcode generator calculates it automatically if you enter 12 digits.
+
+---
+
+# How to Create a WiFi QR Code So Guests Don't Have to Type the Password
+
+URL: https://ineedbarcode.com/en/artikel/cara-membuat-qr-code-wifi
+Published: 2026-10-13
+Topics: Guide, QR Code
+
+Spelling out a long WiFi password to guests is often a hassle, especially when it has capital letters, numbers, and symbols. With a WiFi QR Code, guests simply point their phone camera at the QR Code and connect right away.
+
+## How a WiFi QR Code works
+
+A WiFi QR Code stores the network name (SSID), security type, and password in a special format that phones recognize, for example WIFI:T:WPA;S:NetworkName;P:Password;;. The built-in camera on iPhones (iOS 11 or later) and most Android phones (Android 10 or later) can read it directly, without any extra app.
+
+## Steps to create one
+
+- Open the QR Code generator and select the WiFi tab in the Data section.
+
+- Type the network name exactly as it appears in the WiFi list, including upper and lower case letters.
+
+- Type the password, then choose the security type. Most home and office routers use WPA/WPA2/WPA3.
+
+- Check Hidden network if your WiFi name is not shown in the list.
+
+- Add a frame with text such as "SCAN WIFI" so guests know what it is for, then download the PNG.
+
+## Where to put it up?
+
+- A small card on café or restaurant tables.
+
+- The wall of a living room, reception area, or office meeting room.
+
+- Guesthouse rooms, stuck near the door or the TV.
+
+- The underside of the router at home, so family members can easily connect new devices.
+
+## Security tips
+
+- Use a guest network if your router supports it, so guests do not join the same network as the office computers.
+
+- If the WiFi password is changed, create and reprint the QR Code, because the old QR Code will contain the old password.
+
+- Do not put up a WiFi QR Code for a private network in a public place where anyone can take a photo of it.
+
+## If the QR Code does not connect
+
+Double-check the spelling of the network name and password, because a single wrong letter will make the phone fail to connect. Also make sure the selected security type matches the router settings. For other scanning problems, read reasons a barcode won't scan.
+
+## Frequently Asked Questions
+
+**Can every phone scan a WiFi QR Code?**
+The built-in camera on iPhones with iOS 11 or later and most phones with Android 10 or later can read it directly. Older phones may need a QR scanner app.
+
+**Is a WiFi QR Code secure?**
+Anyone who scans the QR Code can connect to your WiFi. For that reason, use a guest network and do not put up a QR Code for a private network in a public place.
+
+**What should I do if the WiFi password is changed?**
+Create and reprint the WiFi QR Code, because the old QR Code still contains the old password.
+
+---
+
+# The Right Barcode Size and Resolution for Printing
+
+URL: https://ineedbarcode.com/en/artikel/ukuran-barcode-untuk-dicetak
+Published: 2026-10-12
+Topics: Guide, Printing
+
+A barcode that looks good on screen is not necessarily readable once printed. A size that is too small, low resolution, or ink that bleeds can make scanners fail to read it. Here is a guide to keeping your prints readable.
+
+## Understand the module
+
+A module is the smallest unit of a barcode, that is, one small square in a QR Code or the narrowest line in a line barcode. The module size determines how easily the barcode can be read. At I Need Barcode, the module size can be set in the Settings section: the higher the value, the larger and sharper the downloaded image.
+
+## Minimum QR Code size
+
+- For scanning up close (for example business cards or product labels), a size of about 2 × 2 cm is the safe minimum.
+
+- Use a ratio rule of about 10 : 1: the scanning distance is roughly ten times the width of the QR Code. For a poster scanned from 2 meters away, make the QR Code at least about 20 cm.
+
+- The more data you store, the denser the pattern, so a larger size is needed.
+
+## Product barcode size
+
+The standard size of EAN-13 is about 37.3 × 25.9 mm (100%). It may be reduced to about 80% or enlarged up to 200%. Avoid cutting the bar height too short, because checkout scanners need room to read from various angles.
+
+## Image resolution
+
+- For printing, try to have each module drawn with several full pixels, not partial pixels. Choose a larger module size when downloading, then scale it down in your design app, not the other way around.
+
+- Avoid enlarging small barcode images, because the edges of the squares will become blurry or jagged.
+
+- Save in PNG format so the colors and edges are not degraded as they are in JPG.
+
+## Quiet zone
+
+Every barcode needs empty space around it, called the quiet zone. For a QR Code, it should ideally be four modules wide. For line barcodes, empty space on the left and right is very important. Do not place text, design lines, or the edge of the packaging too close.
+
+## Colors and materials
+
+- Use a dark color for the barcode and a light color for the background.
+
+- Avoid glossy or transparent materials, because light reflections can interfere with the camera.
+
+- Always print one sample and test it with several phones or scanners before printing many.
+
+If your barcode is still hard to scan, check 7 reasons a barcode won't scan.
+
+## Frequently Asked Questions
+
+**What is the minimum size of a QR Code for printing?**
+For scanning up close, about 2 × 2 cm is the safe minimum. For longer distances, use a ratio of about 10 : 1 between the scanning distance and the width of the QR Code.
+
+**What is the standard size of an EAN-13 barcode?**
+The standard EAN-13 size is about 37.3 × 25.9 mm. It may be reduced to about 80% or enlarged up to 200%.
+
+**Why is my barcode blurry after printing?**
+Usually because a small image was enlarged, or it was saved as a low-quality JPG. Download it with a larger module size in PNG format.
+
+---
+
+# 7 Reasons a Barcode Won't Scan and How to Fix Them
+
+URL: https://ineedbarcode.com/en/artikel/barcode-tidak-bisa-dipindai
+Published: 2026-10-11
+Topics: Tips, Barcode
+
+Nothing is more frustrating than printing hundreds of barcodes only to find out they cannot be scanned. The good news is that the cause is usually simple and easy to prevent. Here are the seven most common causes.
+
+## 1. Color contrast is too low
+
+Scanners read the difference between dark and light. A light gray barcode on white, or dark blue on black, is hard to distinguish. Solution: use a dark color on a light background. Black on white is the safest choice.
+
+## 2. Inverted colors or red
+
+Light barcodes on a dark background are not supported by all scanners. In addition, many checkout scanners use red light, so red lines look the same as a white background. Solution: avoid red for barcode lines or modules, and do not invert the colors.
+
+## 3. The size is too small
+
+A camera needs enough pixels to recognize each module. Solution: make the barcode larger. For a QR Code scanned up close, use at least about 2 × 2 cm. See the print size guide.
+
+## 4. There is no quiet zone
+
+A barcode that touches images, text, or the edge of the paper is hard to separate from its surroundings. Solution: leave empty space around the barcode, especially to the left and right of line barcodes.
+
+## 5. The image is blurry or distorted
+
+A barcode enlarged from a small image, saved as a low-quality JPG, or stretched out of proportion will lose its shape. Solution: download it with a larger module size in PNG format, and always resize it proportionally.
+
+## 6. The data is wrong or does not match the type
+
+Every barcode type has rules. EAN-13, for example, only accepts 12 or 13 digits with a correct check digit. A mistyped link also makes a QR Code that scans but opens nothing. Solution: check your data before printing. The I Need Barcode generator will display a message if the data does not follow the rules of the selected barcode type.
+
+## 7. Surface and lighting
+
+Glossy materials, clear plastic, folds, and curved surfaces can reflect light or change the shape of the barcode. Solution: print on a flat, non-glossy surface, then test it under the actual lighting conditions.
+
+## About designed QR Codes
+
+QR Codes that are given shapes, colors, or frames can still be scanned as long as the three marker squares in the corners are intact and the contrast is sufficient. Read more in creative QR Code designs that stay readable.
+
+The best habit: always test one print with several phones and scanners before printing in large quantities.
+
+## Frequently Asked Questions
+
+**Why can a QR Code be scanned on one phone but not on another?**
+Cameras and scanner apps differ in capability. QR Codes that are too small, have low contrast, or use inverted colors fail more often on certain phones. Test with several phones before printing.
+
+**Can colored barcodes be scanned?**
+Yes, as long as the color is dark on a light background. Avoid red for barcode lines, because many checkout scanners use red light.
+
+**How can I check whether a barcode is correct?**
+Scan the printed result with several phones or scanners, then make sure the data read is exactly the same as the data you entered.
+
+---
+
+# QR Codes for Restaurant Menus: A Complete Guide
+
+URL: https://ineedbarcode.com/en/artikel/qr-code-menu-restoran
+Published: 2026-10-10
+Topics: Business, QR Code
+
+Digital menus via QR Code are now commonplace in cafés and restaurants. Customers simply scan the QR Code on the table to see the list of dishes, prices, and photos. For business owners, this approach saves on printing costs and makes it easy to change prices or menu items.
+
+## Benefits of a QR Code menu
+
+- Easy to update: change prices or add dishes without reprinting the menu book.
+
+- Cost-effective: just print a small QR Code for each table.
+
+- More informative: show photos, descriptions, and labels such as spicy or vegetarian.
+
+- Supports online ordering: direct customers to an order form or WhatsApp.
+
+## Step 1: Prepare an online menu
+
+A QR Code contains only a link, so you need a menu that can be opened on the internet. Options include a page on your own website, a PDF file in online storage that is shared publicly, or a catalog page on an ordering platform. Make sure the menu is comfortable to read on a phone screen: the text is large enough, the photos are not too heavy, and the prices are clear.
+
+## Step 2: Create the QR Code
+
+- Copy the link to your menu.
+
+- Open the QR Code generator, select the URL tab, then paste the link.
+
+- Add a frame with the text "MENU" or "SCAN TO VIEW THE MENU" in the Design section.
+
+- Match the colors to your restaurant's branding, but still use a dark color on a light background.
+
+- Download the PNG with a module size large enough for printing.
+
+Use a link that will not change. If the menu is moved to a different address, QR Codes that have already been printed cannot be updated. The explanation is in the article what is a QR Code.
+
+## Step 3: Print and put it up
+
+- Print it at a minimum size of about 3–5 cm so it is easy to scan from a seat.
+
+- Use a spill-resistant material, such as vinyl stickers or laminated cards without excessive gloss.
+
+- Place it in an easy-to-reach position, for example on an acrylic stand in the middle of the table.
+
+- Add the table number near the QR Code if customers order via chat.
+
+## Don't forget customers without a phone
+
+Keep one or two printed menus for customers who do not have a phone with them, whose battery has run out, or who are more comfortable reading a physical menu.
+
+You can also create a WiFi QR Code for guests and place it next to the menu QR Code.
+
+## Frequently Asked Questions
+
+**What should I use for a digital menu: a PDF or a web page?**
+A web page is usually more comfortable to read on a phone and faster to open. A PDF can be used if the file is small and the text is large enough on screen.
+
+**How big should a menu QR Code on a table be?**
+About 3 to 5 cm is enough to be scanned from a seat. Use a spill-resistant material that is not too glossy.
+
+**Do I need to reprint the QR Code when the menu changes?**
+No, as long as the link stays the same. Just update the content of the page or menu file that the QR Code points to.
+
+---
+
+# Creative QR Code Designs That Can Still Be Scanned
+
+URL: https://ineedbarcode.com/en/artikel/desain-qr-code-kreatif
+Published: 2026-10-09
+Topics: Design, QR Code
+
+Black and white QR Codes are certainly functional, but they often look stiff on packaging, invitations, or promotional materials. With a little design touch, a QR Code can look more attractive without losing its function. The key is understanding which parts may be changed and which must remain intact.
+
+## Outer shape: heart, circle, and more
+
+In the Design section of the QR Code generator, you can choose shapes such as a circle, heart, hexagon, octagon, star, or diamond. The actual QR Code stays in the middle, and the rest is filled with a decorative pattern until it forms the chosen shape. The decorative pattern contains no data, so it does not interfere with scanning as long as there is empty space around the actual QR Code.
+
+## Dot style
+
+The squares of a QR Code can be changed into rounded shapes or round dots. To keep it easy to scan, the three large squares in the corners (finder patterns) should remain intact as squares, because this is the part the camera looks for first. Our generator always draws this part as a solid square, at most with rounded corners, whatever dot style you choose.
+
+## Color
+
+- Use a dark color for the QR Code and a light color for the background. Navy blue, dark green, purple, or dark brown are generally safe.
+
+- Avoid pale colors for the QR Code, such as yellow, pale pink, or light gray.
+
+- Do not invert the colors into a light QR Code on a dark background, because not all scanner apps support it.
+
+## Frames and calls to action
+
+A frame with a call to action such as "SCAN ME", "MENU", or "SCAN WIFI" has been shown to help people understand what a QR Code is for. You can choose a bottom label, top label, corner, speech bubble, circle, or ribbon frame, then change its text and color.
+
+## Rules for keeping the design readable
+
+- Maintain strong contrast between the QR Code and its background.
+
+- Keep the three marker squares in the corners clear and uncovered.
+
+- Leave empty space around the QR Code and the frame.
+
+- Do not shrink a designed QR Code too much. Shapes such as a heart make the actual QR Code area smaller than the overall image size.
+
+- Test with several phones before printing.
+
+If your design is hard to scan, revert the settings to the defaults one at a time with the Reset button to find the cause. Other common causes can be found in 7 reasons a barcode won't scan.
+
+## Frequently Asked Questions
+
+**Can a heart-shaped QR Code still be scanned?**
+Yes. The actual QR Code stays intact in the middle and the rest is just a decorative pattern. As long as the contrast is strong and the size is sufficient, the QR Code remains readable.
+
+**What colors are safe for a QR Code?**
+Dark colors such as black, navy blue, dark green, purple, or dark brown on a white or very light background.
+
+**Can a QR Code have text or a frame?**
+Yes. A frame with a call to action such as "SCAN ME" actually helps people understand what it is for, as long as the frame does not cover the QR Code.
