@@ -73,9 +73,9 @@
     } catch (e) { /* abaikan */ }
     var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
     var primary = matchLang(prefs[0]);
-    // Gunakan preferensi browser yang sudah dikenali tanpa request geo tambahan.
-    // Ini mempercepat interaksi awal dan mencegah pergantian bahasa kedua yang memicu layout shift.
-    if (primary) return Promise.resolve(primary);
+    // Bahasa browser selain Inggris dipakai langsung. Browser berbahasa Inggris belum tentu pilihan
+    // pengunjung, jadi negara (/api/geo) yang menentukan, sama seperti ineedsave.com.
+    if (primary && primary !== 'en') return Promise.resolve(primary);
     return countryCode().then(function (cc) {
       var byCountry = window.INB_COUNTRY_LANG[String(cc).toUpperCase()];
       if (byCountry) return byCountry;
@@ -895,13 +895,12 @@
     el.meta.textContent = '';
   }
 
-  // bwip-js (±1 MB) dimuat setelah halaman tampil agar teks & bahasa muncul lebih dulu
+  // bwip-js (sekitar 1 MB) hanya dimuat saat pengguna sudah memilih jenis barcode.
   var bwipPromise = null;
   function loadBwip() {
     if (window.bwipjs) return Promise.resolve();
     if (!bwipPromise) {
       bwipPromise = new Promise(function (resolve, reject) {
-        // Dimuat setelah halaman selesai dimuat (+250 ms) agar tidak berebut dengan tampilan awal
         var inject = function () {
           var sc = document.createElement('script');
           sc.src = '/vendor/bwip-js-min.js';
@@ -909,8 +908,7 @@
           sc.onerror = function () { bwipPromise = null; reject(new Error('bwip-js')); };
           document.head.appendChild(sc);
         };
-        if (document.readyState === 'complete') setTimeout(inject, 250);
-        else window.addEventListener('load', function () { setTimeout(inject, 250); }, { once: true });
+        inject();
       });
     }
     return bwipPromise;
@@ -919,12 +917,6 @@
   function render() {
     clearTimeout(timer);
     queueSnap();
-    if (!window.bwipjs) {
-      loadBwip().then(render, function () { showEmpty(t('preview.failed')); });
-      return;
-    }
-    el.preview.classList.toggle('checker', el.transparent.checked);
-    el.dlPng.textContent = t(state.bulk ? 'dl.zip' : 'dl.png');
     if (!BY_ID[state.bcid]) {
       state.last = null;
       showEmpty(t('how.s1d'));
@@ -932,6 +924,12 @@
       el.dlPng.disabled = true;
       return;
     }
+    if (!window.bwipjs) {
+      loadBwip().then(render, function () { showEmpty(t('preview.failed')); });
+      return;
+    }
+    el.preview.classList.toggle('checker', el.transparent.checked);
+    el.dlPng.textContent = t(state.bulk ? 'dl.zip' : 'dl.png');
     if (state.bulk) { renderBulk(); return; }
 
     el.grid.hidden = true;
@@ -1445,8 +1443,9 @@
   // Awal: data contoh sudah terisi (jenis barcode tetap belum dipilih)
   state.values.text.text = initial ? BY_ID[initial].text : BY_ID.qrcode.text;
   state.edited = false;
+  // setLanguage() di bawah memanggil refreshTexts(), jadi hindari merender UI dua kali
+  // pada pemuatan awal. Parameter ?type= tetap perlu menyiapkan opsi jenisnya lebih dulu.
   if (initial) setType(initial, true);
-  else { updateTypeLabel(); renderTabs(); renderForm(); render(); }
 
   // Tampilkan langsung dengan bahasa bawaan, lalu ganti bila bahasa pengunjung berbeda
   setLanguage(lang, false)

@@ -1,6 +1,5 @@
-// Halaman artikel: penghitung dilihat/suka/dibagikan, tombol bagikan, "Artikel Populer", dan baris hak cipta
-// satu baris - sama seperti ineedsave.site. Angka berasal dari /api/stats; tanpa database semua angka 0
-// (suka & bagikan di perangkat ini tetap terlihat) dan Artikel Populer tetap urut terbaru.
+// Halaman artikel: penghitung dilihat/suka/dibagikan, tombol bagikan, "Artikel Populer", dan baris hak cipta.
+// Angka berasal dari /api/stats yang disimpan di Upstash Redis melalui Cloudflare Worker.
 (function () {
   'use strict';
   var toast = document.getElementById('toast');

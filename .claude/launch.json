@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "ineedbarcode", "runtimeExecutable": "npx", "runtimeArgs": ["--yes", "serve", "public", "-l", "4173"], "port": 4173 }
+    { "name": "ineedbarcode", "runtimeExecutable": "npx", "runtimeArgs": ["--yes", "serve", "public", "-l", "4173"], "port": 4173 },
+    { "name": "ineedbarcode-cf", "runtimeExecutable": "npx", "runtimeArgs": ["--yes", "wrangler", "pages", "dev", "public", "--port", "8788"], "port": 8788 }
   ]
 }

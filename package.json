@@ -4,13 +4,18 @@
   "description": "I Need Barcode - generator barcode semua jenis",
   "scripts": {
     "prepare-site": "node scripts/build.js",
-    "dev": "npx --yes serve public -l 4173"
+    "dev": "npx --yes serve public -l 4173",
+    "cloudflare:dev": "npx --yes wrangler dev",
+    "cloudflare:deploy": "npm run prepare-site && npx --yes wrangler deploy",
+    "deploy:cloudflare": "npm run cloudflare:deploy",
+    "test:worker": "node --test worker/index.test.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@upstash/redis": "^1.39.0",
     "bwip-js": "^4.11.4",
     "flag-icons": "^7.6.0"
   },

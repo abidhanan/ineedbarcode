@@ -6,9 +6,11 @@
 // - Penanda versi aset (?v=) agar pengunjung tidak memakai cache lama.
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 // Windows kadang mengunci file sesaat (antivirus / server pratinjau): ulangi penulisan beberapa kali
 const writeOnce = fs.writeFileSync;
 fs.writeFileSync = function () {
+  if (typeof arguments[1] === 'string') arguments[1] = arguments[1].replace(/\u2014/g, '-');
   for (let i = 0; ; i++) {
     try { return writeOnce.apply(fs, arguments); } catch (e) {
       if (i >= 30 || !/^(UNKNOWN|EPERM|EBUSY|EACCES)$/.test(e.code)) throw e;
@@ -49,7 +51,9 @@ const t = (k) => (boot[k] != null ? boot[k] : en[k] != null ? en[k] : k);
 const escText = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const escAttr = (s) => escText(s).replace(/"/g, '&quot;');
 const json = (o) => JSON.stringify(o).replace(/</g, '\\u003c');
-const v = new Date().toISOString().replace(/\D/g, '').slice(0, 14);
+const v = crypto.createHash('sha256')
+  .update(fs.readdirSync(srcDir).sort().map((name) => fs.readFileSync(path.join(srcDir, name))).join(''))
+  .digest('hex').slice(0, 12);
 const BULAN = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 const tanggal = (iso) => { const [y, m, d] = iso.split('-').map(Number); return d + ' ' + BULAN[m - 1] + ' ' + y; };
 const sorted = articles.slice().sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -328,10 +332,10 @@ function page({ L, rest, title, desc, image, imageAlt, imageH, type, ld, main, s
     '  <meta property="og:title" content="' + escAttr(title) + '">\n  <meta property="og:url" content="' + url + '">\n' +
     '  <meta property="og:description" content="' + escAttr(desc) + '">\n  <meta property="og:type" content="' + type + '">\n' +
     '  <meta property="og:site_name" content="I Need Barcode">\n  <meta property="og:locale" content="' + ogLocale(L.code) + '">\n' +
-    '  <meta property="og:image" content="' + image + '">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="' + imageH + '">\n' +
+    '  <meta property="og:image" content="' + image + '">\n  <meta property="og:image:type" content="image/' + (image.includes('.jpg') ? 'jpeg' : 'png') + '">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="' + imageH + '">\n' +
     '  <meta property="og:image:alt" content="' + escAttr(imageAlt) + '">\n' +
     '  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:title" content="' + escAttr(title) + '">\n' +
-    '  <meta name="twitter:description" content="' + escAttr(desc) + '">\n  <meta name="twitter:image" content="' + image + '">\n' +
+    '  <meta name="twitter:description" content="' + escAttr(desc) + '">\n  <meta name="twitter:image" content="' + image + '">\n  <meta name="twitter:image:alt" content="' + escAttr(imageAlt) + '">\n' +
     '  <link rel="icon" href="/favicon.svg?v=' + v + '" type="image/svg+xml" data-light="/favicon-light.svg?v=' + v + '" data-dark="/favicon-dark.svg?v=' + v + '">\n' +
     '  ' + GEO_EARLY + '\n  ' + FAVICON_SWAP + '\n  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=' + v + '">\n' +
     '  <link rel="preload" href="/fonts/noto-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>\n' +
