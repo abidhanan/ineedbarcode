@@ -530,9 +530,11 @@ input[type="color"]::-moz-color-swatch { border: 0; border-radius: 5px; }
 .section + .section { border-top: 1px solid var(--border); }
 .section-generator { padding-top: 0; }
 @media (min-width: 768px) { .section { padding: 64px 0; } .section-generator { padding-top: 8px; } }
+/* Layar sentuh (HP/tablet, termasuk "situs desktop"): jarak antar section tetap wajar */
+@media (min-width: 768px) and (pointer: coarse) { .section { padding: 48px 0; } .section-generator { padding-top: 0; } }
 
-/* Desktop: setiap section setinggi layar, isinya di tengah */
-@media (min-width: 920px) and (min-height: 620px) {
+/* Desktop dengan mouse: setiap section setinggi layar, isinya di tengah. HP dengan "situs desktop" tidak ikut */
+@media (min-width: 920px) and (min-height: 620px) and (pointer: fine) {
   .section {
     min-height: calc(100vh - var(--topbar-h));
     min-height: calc(100svh - var(--topbar-h));
